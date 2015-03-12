@@ -1,6 +1,6 @@
 Schedule and deliverable:
 
-	-draft home page for the admin home.php -- Wed 03/11 by 11pm (estimate: 6 hrs)
+	-draft home page for the admin home.php -- Wed 03/11 by 11.59pm (estimate: 6 hrs)
 	-draft login page for the admin login.php -- Thurs 03/12 by 8pm (estimate: 1 hr)
 	-code for verifying login credentials verify.php -- Thurs 03/12 by 8pm (estimate: 1 hr)
 	-draft for forgot password page for the admin forgotpassword.php -- Fri 03/13 by 8pm (estimate: 3 hrs)
