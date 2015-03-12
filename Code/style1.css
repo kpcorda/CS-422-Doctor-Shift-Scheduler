@@ -1,0 +1,37 @@
+   table {
+   border: 2px solid black;
+   width: 100%;	
+   table-layout: fixed;
+   font-family: Georgia, Times, serif;
+   }
+   th {
+   border: 2px solid black;
+   text-transform: uppercase;
+   }
+   td {
+   border: 1px solid black;
+   height: 6.5em;
+   }
+   .day {
+   font-size: 25px; 
+   text-align: top;
+   }
+   .week {
+   text-align: center;
+   }
+   .weekend {
+   background-color: #C8E3FF;
+   }
+   body {
+   margin: 0;
+   padding: 0;
+   }
+   .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+.btn-group:hover .dropdown-menu {
+        display: block;
+    }
+   form{
+	text-align: center;
+}
