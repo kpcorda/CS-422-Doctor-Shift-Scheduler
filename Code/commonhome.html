@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link type="text/css" rel="stylesheet" href="style1.css"/>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<script src="http://cameronspear.com/downloads/bootstrap-hover-dropdown/bootstrap-hover-dropdown.js"></script>
+        <script src="script1.js" type="text/javascript"></script>
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+            <title>
+                DSS Home Page
+            </title>
+    </head>
+    
+    <body>
+	<div class="container">
+	<nav class="navbar navbar-inverse navbar-fixed-top" >
+	<div class="container-fluid">
+    <div class="navbar-header">
+     
+      <a class="navbar-brand" href="#">Doctor Shift Scheduler</a>
+    </div>
+      	
+    	</div>
+            
+  	
+	</nav>
+	</div>
+	<div class="container">
+  		<div class="jumbotron">
+    			<h2>Doctor Shift Scheduler</h2>
+  		</div>
+	 <form>
+        <div class="btn-group" id="dd1">
+		<button class="btn btn-default" id="term">JAN - JUL 2015 &nbsp;</button>
+            
+	    <div class="dropdown-menu">
+	<div class="option1" id="opt1">
+                <div><a href="#"> JAN - JUN </a></div>
+                <div><a href="#"> JUL - DEC </a></div> 
+	</div> 
+            </div>
+        </div>
+	&nbsp;&nbsp;
+        <div class="btn-group" id="dd2">
+	<button class="btn btn-default" id="year">2015  &nbsp;</button>
+            
+            <div class="dropdown-menu scrollable-menu">
+		<div class="option" id="opt">
+                <div><a href="#"> 2015 </a></div>
+                <div><a href="#"> 2014 </a></div>
+                <div><a href="#"> 2013 </a></div>
+                <div><a href="#"> 2012 </a></div>
+		<div><a href="#"> 2011 </a></div>
+		<div><a href="#"> 2010 </a></div>
+		<div><a href="#"> 2009 </a></div>
+		<div><a href="#"> 2008 </a></div>
+		<div><a href="#"> 2007 </a></div>
+		<div><a href="#"> 2006 </a></div>
+		<div><a href="#"> 2005 </a></div>
+		<div><a href="#"> 2004 </a></div>
+		<div><a href="#"> 2003 </a></div>
+		<div><a href="#"> 2002 </a></div>
+		<div><a href="#"> 2001 </a></div>
+		</div>
+            </div>
+        </div>
+	</form>
+	<div>
+	<ul class="pager">
+    	<li class="previous"><a href="#"><span class="glyphicon glyphicon-arrow-left"></span></a></li>
+        <li class="current">
+	<div class="btn-group" id="dd3">
+	<button class="btn btn-default" id="month">March &nbsp;</button>
+           
+            <div class="dropdown-menu scrollable-menu">
+		<div class="option2" id="opt2">
+                <div><a href="#"> JANUARY </a></div>
+                <div><a href="#"> FEBRUARY </a></div>
+                <div><a href="#"> MARCH </a></div>
+                <div><a href="#"> APRIL </a></div>
+		<div><a href="#"> MAY </a></div>
+		<div><a href="#"> JUNE </a></div>
+		<div><a href="#"> JULY </a></div>
+		<div><a href="#"> AUGUST </a></div>
+		<div><a href="#"> SEPTEMBER </a></div>
+		<div><a href="#"> OCTOBER </a></div>
+		<div><a href="#"> NOVEMBER </a></div>
+		<div><a href="#"> DECEMBER </a></div>
+		</div>
+            </div>
+        </div>
+    	<li class="next"><a href="#"><span class="glyphicon glyphicon-arrow-right"></span></a></li>
+  	</ul>
+	</div>
+  	 <table>
+  <col class="weekend">
+  <col class="weekday" span="5">
+  <col class="weekend">
+  <thead>
+    <tr>	
+      
+      <th><div class="week">Sunday</div></th>
+      <th><div class="week">Monday</div></th>
+      <th><div class="week">Tuesday</div></th>
+      <th><div class="week">Wednesday</div></th>
+      <th><div class="week">Thursday</div></th>
+      <th><div class="week">Friday</div></th>
+      <th><div class="week">Saturday</div></th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+<div class="try">
+	<div class="day">1</div>
+	<div class="sc">SC: KA
+
+	</div>
+</div>
+          <div class="try1">
+	<div class="pc">PC: PM
+            
+        
+	<div class="space"><br/></div>
+	</div>  
+              </div>
+	</td>
+        
+      <td>
+          <div class="try2">
+	<div class="day">2</div>
+	<div class="sc">SC: PM
+	
+
+	</div>
+
+	</div>
+          <div class="try3">
+	<div class="pc">PC: AV
+        
+	<div class="space"><br/></div>
+	</div>
+          </div>
+	</td>
+       <td>
+<div class="try4">
+	<div class="day">3</div>
+	<div class="sc">SC: NK
+</div>
+
+	</div>
+          <div class="try5">
+	<div class="pc">PC: HG
+            
+	<div class="space"><br/></div>
+	</div>
+          </div>
+	</td>
+        
+      <td>
+          <div class="try6">
+	<div class="day">4</div>
+	<div class="sc">SC: GS
+	</div>
+
+	</div>
+          <div class="try7">
+	<div class="pc">PC: MG
+            
+        
+	<div class="space"><br/></div>
+        </div></div>
+	</td>
+      <td>
+<div class="try8">
+	<div class="day">5</div>
+	<div class="sc">SC: RF
+	</div>
+
+	</div>
+          <div class="try9">
+	<div class="pc">PC: BJ
+           
+        
+	<div class="space"><br/></div>
+	</div>
+          </div>
+	</td>
+        
+      <td>
+          <div class="try10">
+	<div class="day">6</div>
+	<div class="sc">SC: TY
+	</div>
+
+	</div>
+          <div class="try11">
+	<div class="pc">PC: SW
+            
+        
+	<div class="space"><br/></div>
+        </div></div>
+	</td>
+       <td>
+          <div class="try12">
+	<div class="day">7</div>
+	<div class="sc">SC: PM
+	</div>
+
+	</div>
+          <div class="try13">
+	<div class="pc">PC: AM
+            
+        
+	<div class="space"><br/></div>
+        </div></div>
+	</td>
+    </tr>
+    <tr>
+      <td>
+<div class="try14">
+	<div class="day">8</div>
+	<div class="sc">SC: TM
+	</div>
+
+	</div>
+          <div class="try15">
+	<div class="pc">PC: MS
+          
+	<div class="space"><br/></div>
+	</div>
+          </div>
+
+	</td>
+        
+      <td>
+          <div class="try16">
+	<div class="day">9</div>
+	<div class="sc">SC:PM
+</div>
+
+	</div>
+          <div class="try17">
+	<div class="pc">PC: AM
+            
+	<div class="space"><br/></div>
+        </div></div>
+	</td>
+       <td>
+<div class="try18">
+	<div class="day">10</div>
+	<div class="sc">SC: AG
+	</div>
+
+	</div>
+          <div class="try19">
+	<div class="pc">PC: GS
+            
+	<div class="space"><br/></div>
+	</div>
+          </div>
+	</td>
+        
+      <td>
+          <div class="try20">
+	<div class="day">11</div>
+	<div class="sc">SC: RF
+	</div>
+
+	</div>
+          <div class="try21">
+	<div class="pc">PC: JB
+            
+        
+	<div class="space"><br/></div>
+        </div></div>
+	</td>
+      <td>
+<div class="try22">
+	<div class="day">12</div>
+	<div class="sc">SC:JB
+	</div>
+
+	</div>
+          <div class="try23">
+	<div class="pc">PC: SW
+            
+	<div class="space"><br/></div>
+	</div>
+          </div>
+	</td>
+        
+      <td>
+          <div class="try24">
+	<div class="day">13</div>
+	<div class="sc">SC: AV
+	</div>
+
+	</div>
+          <div class="try25">
+	<div class="pc">PC: PB
+            
+	<div class="space"><br/></div>
+        </div></div>
+	</td>
+       <td>
+          <div class="try26">
+	<div class="day">14</div>
+	<div class="sc">SC: PB
+	</div>
+
+	</div>
+          <div class="try27">
+	<div class="pc">PC: MG
+            
+	<div class="space"><br/></div>
+        </div></div>
+	</td>
+    </tr>
+    <tr>
+      <td>
+<div class="try28">
+	<div class="day">15</div>
+	<div class="sc">SC: AM
+	</div>
+
+	</div>
+          <div class="try29">
+	<div class="pc">PC: PM
+            
+        
+	<div class="space"><br/></div>
+	</div>
+          </div>
+	</td>
+        
+        <td style ="background-color: #ffffcc">
+          <div class="try30">
+	<div class="day">16</div>
+	<div class="sc">SC: GS
+	</div>
+
+	</div>
+          <div class="try31">
+	<div class="pc">PC: JB
+            
+	<div class="space"><br/></div>
+        </div></div>
+	</td>
+       <td>
+<div class="try32">
+	<div class="day">17</div>
+	<div class="sc">SC:PM
+	</div>
+
+	</div>
+          <div class="try33">
+	<div class="pc">PC:KA
+            
+	<div class="space"><br/></div>
+        </div></div>
+
+	</td>
+        
+      <td>
+          <div class="try34">
+	<div class="day">18</div>
+	<div class="sc">SC: PH
+	</div>
+
+	</div>
+          <div class="try35">
+	<div class="pc">PC: MG
+            
+        
+	<div class="space"><br/></div>
+        </div></div>
+	</td>
+      <td>
+<div class="try36">
+	<div class="day">19</div> 
+	<div class="sc">SC: GT
+	</div>
+
+	</div>
+          <div class="try37">
+	<div class="pc">PC: MA
+            
+        
+	<div class="space"><br/></div>
+        </div></div>
+
+	</td>
+        
+      <td>
+          <div class="try38">
+	<div class="day">20</div>
+	<div class="sc">SC: MA
+	</div>
+
+	</div>
+          <div class="try39">
+	<div class="pc">PC: RF
+            
+	<div class="space"><br/></div>
+	</div></div>
+	</td>
+       <td>
+          <div class="try40">
+	<div class="day">21</div>
+	<div class="sc">SC:RF
+	</div>
+
+	</div>
+          <div class="try41">
+	<div class="pc">PC: GS
+           
+        
+	<div class="space"><br/></div>
+	</div></div>
+	</td>
+    </tr>
+    <tr>
+      <td>
+<div class="try42">
+	<div class="day">22</div>
+	<div class="sc">SC: RT
+	</div>
+
+	</div>
+          <div class="try43">
+	<div class="pc">PC:HM
+           
+        
+	<div class="space"><br/></div>
+	</div>
+</div>
+	</td>
+        
+      <td>
+          <div class="try44">
+	<div class="day">23</div>
+	<div class="sc">SC: GS
+	</div>
+
+	</div>
+          <div class="try45">
+	<div class="pc">PC: PM
+        
+        
+	<div class="space"><br/></div>
+	</div></div>
+	</td>
+       <td>
+<div class="try46">
+	<div class="day">24</div>
+	<div class="sc">SC: PM
+	</div>
+
+	</div>
+          <div class="try47">
+	<div class="pc">PC: MC
+       
+        
+	<div class="space"><br/></div>
+	</div>
+</div>
+	</td>
+        
+      <td>
+          <div class="try48">
+	<div class="day">25</div>
+	<div class="sc">SC: GH
+	</div>
+
+	</div>
+       
+          <div class="try49">
+	<div class="pc">PC:TR
+            
+        
+	<div class="space"><br/></div>
+	</div></div>
+	</td>
+      <td>
+<div class="try50">
+	<div class="day">26</div>
+	<div class="sc">SC:AM
+	</div>
+
+	</div>
+          <div class="try51">
+	<div class="pc">PC: RF
+          </div>
+</div>
+	</td>
+        
+      <td>
+          <div class="try52">
+	<div class="day">27</div>
+	<div class="sc">SC: KA
+	</div>
+
+	</div>
+          <div class="try53">
+	<div class="pc">PC: JB
+            </div>
+	    </div>
+	</td>
+       <td>
+          <div class="try54">
+	<div class="day">28</div>
+	<div class="sc">SC: HR
+	</div>
+
+	</div>
+          <div class="try55">
+	<div class="pc">PC: PM
+           
+        
+	<div class="space"><br/></div>
+	</div></div>
+	</td>
+    </tr>
+    <tr>
+      <td>
+          <div class="try56">
+	<div class="day">29</div>
+	<div class="sc">SC: TY
+	</div>
+
+	</div>
+          <div class="try57">
+	<div class="pc">PC: MG
+            <div class="space"><br/></div>
+        </div></div>
+	</td>
+       <td>
+          <div class="try58">
+	<div class="day">30</div>
+	<div class="sc">SC:RF
+</div>
+
+	</div>
+          <div class="try59">
+	<div class="pc">PC:HR
+           <div class="space"><br/></div>
+        </div></div>
+	</td>
+        <td>
+          <div class="try60">
+	<div class="day">31</div>
+	<div class="sc">SC: GS
+	</div>
+
+	</div>
+          <div class="try61">
+	<div class="pc">PC: KC
+            
+	<div class="space"><br/></div>
+        </div></div>
+	</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<br/>
+<br/>
+<form class="publish">
+ <div class="btn-group">
+            <button type="button" class="btn btn-default" id="pub"><span class="glyphicon glyphicon-print"></span> &nbsp;PRINT</button>
+</div>
+</form>
+
+<br/>
+<br/>
+
+        </div>
+        <nav class="navbar navbar-default navbar-bottom">
+  <div class="container-fluid">
+    <div>
+      <ul class="nav navbar-nav">
+        
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li> 
+       
+      </ul>
+    </div>
+  </div>
+</nav>
+    </body>
+</html>	
