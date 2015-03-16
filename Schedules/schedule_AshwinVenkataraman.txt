@@ -1,6 +1,6 @@
 Schedule and Deliverables
 
-	-Add/Remove and Edit doctor details addDoc.php - Wednesday 03/11 by 11.59pm (estimate: 2 hours)
-	-Home page draft for common view Scheduler common.php - Thursday 03/12 by 8pm (estimate: 6 hours)
-	-Sample draft for individual statistics page IndividualStats.php - Friday 03/13 by 8pm (estimate: 4 hours)
-	-Vacation page Vacation.php - Friday 03/13 by 8pm (estimate: 5 hours)
+	-Add/Remove and Edit doctor details addDoc.html - Wednesday 03/11 by 11.59pm (estimate: 2 hours)
+	-Home page draft for common view Scheduler common.html - Thursday 03/12 by 8pm (estimate: 6 hours)
+	-Sample draft for individual statistics page IndividualStats.html - Friday 03/13 by 8pm (estimate: 4 hours)
+	-Vacation page Vacation.html - Friday 03/13 by 8pm (estimate: 5 hours)
