@@ -1,0 +1,359 @@
+   /* calendar */
+table.calendar		{ border: 2px solid black;
+   width: 100%;	
+   table-layout: fixed;
+   font-family: Georgia, Times, serif; }
+
+tr.calendar-row	{  }
+td.calendar-day-today	{ height:75px; font-size:15px; position:relative; vertical-align: middle; background:#ffffcc; border: 1px black; } * html div.calendar-day-today { height:75px; }
+td.calendar-day	{ height:75px; font-size:15px; position:relative; vertical-align: middle; } * html div.calendar-day { height:75px; }
+td.calendar-day:hover	{ background:#eceff5; }
+td.calendar-day-np	{ background:#e9e9e9; height:75px; } * html div.calendar-day-np { height:75px; }
+td.calendar-day-head { border: 2px solid black;
+   text-transform: uppercase;
+   height: 25px;
+   font-size: 100%;
+text-align: center;
+font-weight:bold;
+background: #fff;
+}
+div.day-number		{ font-size:175%; color:#000; float:left;  width:20px; text-align:center; }
+/* shared */
+td.calendar-day, td.calendar-day-np { width:120px; padding:5px; border-bottom:1px solid #999; border-right:1px solid #999; }
+   
+   
+   div.sc {
+   font-size: 120%; 
+   text-align: center;
+   }
+  a{
+   text-decoration: none !important; 
+   }
+	div.pc {
+   font-size: 120%; 
+   text-align: center;
+   
+   }
+   .week {
+   text-align: center;
+   }
+   .weekend {
+   background-color:  #ccccff;
+   }
+   body {
+   margin: 0;
+   padding: 0;
+   }
+  
+   form{
+	text-align: center;
+	}
+.publish{
+text-align: right;
+}
+.scrollable-menu {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+}
+.dropdown{
+display: inline-block;
+}
+.sel {
+    color:white;
+    width: 250px;
+    min-height: 40px;
+    box-sizing: border-box;
+    background-color: #55E6FA;
+    overflow: hidden;
+}
+
+.selected {
+    background-color: #d3d3d3;
+}
+.hide {
+    display: none;
+}
+.sel .option {
+    background-color: #66f7FB;
+}
+.sel .option div {
+    transition: all 0.2s ease-out;
+    padding: 10px;
+}
+.sel .option div:hover {
+    background-color: #d3d3d3;
+}
+#opt100 a{
+    text-decoration: none; 
+    color: black;
+}
+#opt1 a{
+    text-decoration: none; 
+    color: black;
+}
+#opt a{
+    text-decoration: none; 
+    color: black;
+}
+#opt2 a{
+    text-decoration: none; 
+    color: black;
+}
+#opt3 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop a{
+    text-decoration: none; 
+    color: black;
+}
+#drop1 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop2 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop3 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop4 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop5 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop6 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop7 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop8 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop9 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop10 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop11 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop12 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop13 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop14 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop15 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop16 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop17 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop18 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop19 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop20 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop21 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop22 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop23 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop24 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop25 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop26 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop27 a{
+    text-decoration: none; 
+    color: black;
+}
+
+#drop28 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop29 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop30 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop31 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop32 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop33 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop34 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop35 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop36 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop37 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop38 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop39 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop40 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop41 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop42 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop43 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop44 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop45 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop46 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop47 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop48 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop49 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop50 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop51 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop52 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop53 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop54 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop55 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop56 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop57 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop58 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop59 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop60 a{
+    text-decoration: none; 
+    color: black;
+}
+#drop61 a{
+    text-decoration: none; 
+    color: black;
+}
+
+.navbar-default .navbar-backgrnd {
+    color: #e9e9e9;
+}

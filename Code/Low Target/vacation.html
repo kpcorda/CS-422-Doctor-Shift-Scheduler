@@ -1,0 +1,655 @@
+<html>
+<head>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link type="text/css" rel="stylesheet" href="style12.css"/>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+<script>
+	$(document).ready(function(){
+    $('td').click(function () {
+    	$(this).toggleClass('cellRed');
+});
+});
+
+$(document).ready(function()
+{
+	$('#AM').click(function(){
+		$('.DivsContent.active').removeClass('active');
+		$(this).parent().toggleClass('active');
+		var table = $('.reload');
+		$('td').toggleClass();
+		$('.reload').html();
+});
+	$('#PM').click(function(){
+		$('.DivsContent.active').removeClass('active');
+		$(this).parent().toggleClass('active');
+		var table = $('.reload');
+		$('td').toggleClass();
+		$('.reload').html();
+});
+
+	$('#PB').click(function(){
+$('.DivsContent.active').removeClass('active');
+$(this).parent().toggleClass('active');
+		var table = $('.reload');
+		$('td').toggleClass();
+		$('.reload').html();
+});
+	$('#GS').click(function(){
+$('.DivsContent.active').removeClass('active');
+$(this).parent().toggleClass('active');
+		var table = $('.reload');
+		$('td').toggleClass();
+		$('.reload').html();
+});
+	$('#RF').click(function(){
+$('.DivsContent.active').removeClass('active');
+$(this).parent().toggleClass('active');
+		var table = $('.reload');
+		$('td').toggleClass();
+		$('.reload').html();
+});
+	$('#JB').click(function(){
+$('.DivsContent.active').removeClass('active');
+$(this).parent().toggleClass('active');
+		var table = $('.reload');
+		$('td').toggleClass();
+		$('.reload').html();
+});
+	$('#AK').click(function(){
+$('.DivsContent.active').removeClass('active');
+$(this).parent().toggleClass('active');
+		var table = $('.reload');
+		$('td').toggleClass();
+		$('.reload').html();
+});
+	$('#KA').click(function(){
+$('.DivsContent.active').removeClass('active');
+$(this).parent().toggleClass('active');
+		var table = $('.reload');
+		$('td').toggleClass();
+		$('.reload').html();
+});
+	$('#MG').click(function(){
+$('.DivsContent.active').removeClass('active');
+$(this).parent().toggleClass('active');
+		var table = $('.reload');
+		$('td').toggleClass();
+		$('.reload').html();
+});
+	
+});
+</script>
+<title> DSS Vacation Page</title>
+
+</head>
+<body>
+<div class="container">
+	<nav class="navbar navbar-inverse navbar-fixed-top" >
+	<div class="container-fluid">
+    <div class="navbar-header">
+     
+      <a class="navbar-brand" href="home.html">Doctor Shift Scheduler</a>
+    </div>
+      	<ul class="nav navbar-nav">
+        <li><a href="home.html"><span class="glyphicon glyphicon-home"> Home</span></a></li>
+        <li class="dropdown" id="dd">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-stats"></span> &nbsp;Statistics</a>
+          <ul class="dropdown-menu">
+            <li><a href="IndividualStats.html"> Individual Statistics </a></li>
+            <li><a href="groupstats.html"> Group Statistics </a></li>
+          </ul>
+        </li>
+        <li class="active"><a href="#"><span class="glyphicon glyphicon-plane"></span> &nbsp; Vacations </a></li> 
+        <li><a href="addDoc.html"><span class="fa fa-user-md"></span> &nbsp; Doctors </a></li> 
+      	</ul>
+	<ul class="nav navbar-nav navbar-right">
+        <li><a href="logout.html"><span class="glyphicon glyphicon-log-out"></span> &nbsp;Logout</a></li>
+      	</ul>
+    	</div>
+            
+  	
+	</nav>
+	</div>
+	<div class="container">
+  		<div class="jumbotron">
+    			<h2>Vacation Schedule</h2>
+  		</div>
+</div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<h3>Doctors </h3>
+<div class="row">
+  <div class="col-sm-2">
+    <div class="sidebar-nav">
+      <div class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <span class="visible-xs navbar-brand">Sidebar menu</span>
+        </div>
+        <div class="navbar-collapse collapse sidebar-navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="DivsContent"><a href="#" id="AM">AM</a></li>
+            <li class="DivsContent"><a href="#" id="PM">PM</a></li>
+            
+            	<li class="DivsContent"><a href="#" id="KA">KA</a></li>
+		<li class="DivsContent"><a href="#" id="PB">PB</a></li>
+		<li class="DivsContent"><a href="#" id="GS">GS</a></li>
+		<li class="DivsContent"><a href="#" id="RF">RF</a></li>
+		<li class="DivsContent"><a href="#" id="JB">JB</a></li>
+		<li class="DivsContent"><a href="#" id="AK">AK</a></li>
+		<li class="DivsContent"><a href="#" id="MG">MG</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+  </div>
+	<div class="reload">
+  <div class="col-sm-9">
+<TABLE class="topic">
+<TR>
+<TD COLSPAN="7" ALIGN=center><B>January 2015</B></TD>
+</TR>
+
+
+<TR>
+<TD ALIGN=center>Sun</TD>
+<TD ALIGN=center>Mon</TD>
+<TD ALIGN=center>Tue</TD>
+<TD ALIGN=center>Wed</TD>
+<TD ALIGN=center>Thu</TD>
+<TD ALIGN=center>Fri</TD>
+<TD ALIGN=center>Sat</TD>
+</TR>
+
+<TR>
+<TD ALIGN=center><font color="#d3d3d3">28</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">29</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">30</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">31</font></TD>
+<TD ALIGN=center>1</TD>
+<TD ALIGN=center>2</TD>
+<TD ALIGN=center>3</TD>
+</TR>
+
+<TR>
+<TD ALIGN=center>4</TD>
+<TD ALIGN=center>5</TD>
+<TD ALIGN=center>6</TD>
+<TD ALIGN=center>7</TD>
+<TD ALIGN=center>8</TD>
+<TD ALIGN=center>9</TD>
+<TD ALIGN=center>10</TD>
+</TR>
+
+<TR>
+<TD ALIGN=center>11</TD>
+<TD ALIGN=center>12</TD>
+<TD ALIGN=center>13</TD>
+<TD ALIGN=center>14</TD>
+<TD ALIGN=center>15</TD>
+<TD ALIGN=center>16</TD>
+<TD ALIGN=center>17</TD>
+</TR>
+
+<TR>
+<TD ALIGN=center>18</TD>
+<TD ALIGN=center>19</TD>
+<TD ALIGN=center>20</TD>
+<TD ALIGN=center>21</TD>
+<TD ALIGN=center>22</TD>
+<TD ALIGN=center>23</TD>
+<TD ALIGN=center>24</TD>
+</TR>
+
+<TR>
+<TD ALIGN=center>25</TD>
+<TD ALIGN=center>26</TD>
+<TD ALIGN=center>27</TD>
+<TD ALIGN=center>28</TD>
+<TD ALIGN=center>29</TD>
+<TD ALIGN=center>30</TD>
+<TD ALIGN=center>31</TD>
+
+</TR>
+<TR>
+<TD ALIGN=center><font color="#d3d3d3">1</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">2</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">3</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">4</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">5</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">6</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">7</font></TD>
+
+</TR>
+
+</TABLE> 
+
+<TABLE  class="topic">
+<TR>
+<TD COLSPAN="7" ALIGN=center><B>February 2015</B></TD>
+</TR>
+<TR>
+<TD ALIGN=center>Sun</TD>
+<TD ALIGN=center>Mon</TD>
+<TD ALIGN=center>Tue</TD>
+<TD ALIGN=center>Wed</TD>
+<TD ALIGN=center>Thu</TD>
+<TD ALIGN=center>Fri</TD>
+<TD ALIGN=center>Sat</TD>
+</TR>
+<TR>
+<TD ALIGN=center><font color="#d3d3d3">25</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">26</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">27</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">28</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">29</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">30</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">31</font></TD>
+
+</TR>
+<TR>
+<TD ALIGN=center>1</TD>
+<TD ALIGN=center>2</TD>
+<TD ALIGN=center>3</TD>
+<TD ALIGN=center>4</TD>
+<TD ALIGN=center>5</TD>
+<TD ALIGN=center>6</TD>
+<TD ALIGN=center>7</TD>
+</TR>
+
+<TR>
+<TD ALIGN=center>8</TD>
+<TD ALIGN=center>9</TD>
+<TD ALIGN=center>10</TD>
+<TD ALIGN=center>11</TD>
+<TD ALIGN=center>12</TD>
+<TD ALIGN=center>13</TD>
+<TD ALIGN=center>14</TD>
+</TR>
+
+<TR>
+<TD ALIGN=center>15</TD>
+<TD ALIGN=center>16</TD>
+<TD ALIGN=center>17</TD>
+<TD ALIGN=center>18</TD>
+<TD ALIGN=center>19</TD>
+<TD ALIGN=center>20</TD>
+<TD ALIGN=center>21</TD>
+</TR>
+
+<TR>
+<TD ALIGN=center>22</TD>
+<TD ALIGN=center>23</TD>
+<TD ALIGN=center>24</TD>
+<TD ALIGN=center>25</TD>
+<TD ALIGN=center>26</TD>
+<TD ALIGN=center>27</TD>
+<TD ALIGN=center>28</TD>
+</TR>
+<TR>
+<TD ALIGN=center><font color="#d3d3d3">1</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">2</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">3</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">4</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">5</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">6</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">7</font></TD>
+
+</TR>
+</TABLE> 
+
+
+<TABLE  class="topic">
+<TR>
+<TD COLSPAN="7" ALIGN=center><B>March 2015</B></TD>
+</TR>
+
+
+<TR>
+<TD ALIGN=center>Sun</TD>
+<TD ALIGN=center>Mon</TD>
+<TD ALIGN=center>Tue</TD>
+<TD ALIGN=center>Wed</TD>
+<TD ALIGN=center>Thu</TD>
+<TD ALIGN=center>Fri</TD>
+<TD ALIGN=center>Sat</TD>
+</TR>
+<TR>
+<TD ALIGN=center><font color="#d3d3d3">22</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">23</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">24</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">25</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">26</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">27</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">28</font></TD>
+
+</TR>
+<TR>
+<TD ALIGN=center>1</TD>
+<TD ALIGN=center>2</TD>
+<TD ALIGN=center>3</TD>
+<TD ALIGN=center>4</TD>
+<TD ALIGN=center>5</TD>
+<TD ALIGN=center>6</TD>
+<TD ALIGN=center>7</TD>
+</TR>
+
+<TR>
+<TD ALIGN=center>8</TD>
+<TD ALIGN=center>9</TD>
+<TD ALIGN=center>10</TD>
+<TD ALIGN=center>11</TD>
+<TD ALIGN=center>12</TD>
+<TD ALIGN=center>13</TD>
+<TD ALIGN=center>14</TD>
+</TR>
+
+<TR>
+<TD ALIGN=center>15</TD>
+<TD ALIGN=center>16</TD>
+<TD ALIGN=center>17</TD>
+<TD ALIGN=center>18</TD>
+<TD ALIGN=center>19</TD>
+<TD ALIGN=center>20</TD>
+<TD ALIGN=center>21</TD>
+</TR>
+
+<TR>
+<TD ALIGN=center>22</TD>
+<TD ALIGN=center>23</TD>
+<TD ALIGN=center>24</TD>
+<TD ALIGN=center>25</TD>
+<TD ALIGN=center>26</TD>
+<TD ALIGN=center>27</TD>
+<TD ALIGN=center>28</TD>
+</TR>
+
+<TR>
+<TD ALIGN=center>29</TD>
+<TD ALIGN=center>30</TD>
+<TD ALIGN=center>31</TD>
+<TD ALIGN=center><font color="#d3d3d3">1</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">2</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">3</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">4</font></TD>
+
+
+</TR>
+
+</TABLE>
+<br/>
+<br/>
+<br/>
+ </div>
+<div class="col-sm-9"><br/>
+
+</div>
+
+<div class="col-sm-9">
+<TABLE class="topic">
+<TR>
+<TD COLSPAN="7" ALIGN=center><B>April 2015</B></TD>
+</TR>
+
+
+<TR>
+<TD ALIGN=center>Sun</TD>
+<TD ALIGN=center>Mon</TD>
+<TD ALIGN=center>Tue</TD>
+<TD ALIGN=center>Wed</TD>
+<TD ALIGN=center>Thu</TD>
+<TD ALIGN=center>Fri</TD>
+<TD ALIGN=center>Sat</TD>
+</TR>
+
+<TR>
+<TR>
+<TD ALIGN=center><font color="#d3d3d3">29</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">30</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">31</font></TD>
+<TD ALIGN=center>1</TD>
+<TD ALIGN=center>2</TD>
+<TD ALIGN=center>3</TD>
+<TD ALIGN=center>4</TD>
+</TR>
+
+<TR>
+<TD ALIGN=center>5</TD>
+<TD ALIGN=center>6</TD>
+<TD ALIGN=center>7</TD>
+<TD ALIGN=center>8</TD>
+<TD ALIGN=center>9</TD>
+<TD ALIGN=center>10</TD>
+<TD ALIGN=center>11</TD>
+</TR>
+
+<TR>
+<TD ALIGN=center>12</TD>
+<TD ALIGN=center>13</TD>
+<TD ALIGN=center>14</TD>
+<TD ALIGN=center>15</TD>
+<TD ALIGN=center>16</TD>
+<TD ALIGN=center>17</TD>
+<TD ALIGN=center>18</TD>
+</TR>
+
+<TR>
+<TD ALIGN=center>19</TD>
+<TD ALIGN=center>20</TD>
+<TD ALIGN=center>21</TD>
+<TD ALIGN=center>22</TD>
+<TD ALIGN=center>23</TD>
+<TD ALIGN=center>24</TD>
+<TD ALIGN=center>25</TD>
+</TR>
+
+<TR>
+<TD ALIGN=center>26</TD>
+<TD ALIGN=center>27</TD>
+<TD ALIGN=center>28</TD>
+<TD ALIGN=center>29</TD>
+<TD ALIGN=center>30</TD>
+<TD ALIGN=center><font color="#d3d3d3">1</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">2</font></TD>
+</TR>
+<TR>
+<TD ALIGN=center><font color="#d3d3d3">3</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">4</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">5</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">6</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">7</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">8</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">9</font></TD>
+
+</TR>
+
+</TABLE> 
+
+<TABLE  class="topic">
+<TR>
+<TD COLSPAN="7" ALIGN=center><B>May 2015</B></TD>
+</TR>
+
+
+<TR>
+<TD ALIGN=center>Sun</TD>
+<TD ALIGN=center>Mon</TD>
+<TD ALIGN=center>Tue</TD>
+<TD ALIGN=center>Wed</TD>
+<TD ALIGN=center>Thu</TD>
+<TD ALIGN=center>Fri</TD>
+<TD ALIGN=center>Sat</TD>
+</TR>
+
+<TR>
+
+<TD ALIGN=center><font color="#d3d3d3">26</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">27</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">28</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">29</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">30</font></TD>
+<TD ALIGN=center>1</TD>
+<TD ALIGN=center>2</TD>
+</TR>
+
+<TR>
+<TD ALIGN=center>3</TD>
+<TD ALIGN=center>4</TD>
+<TD ALIGN=center>5</TD>
+<TD ALIGN=center>6</TD>
+<TD ALIGN=center>7</TD>
+<TD ALIGN=center>8</TD>
+<TD ALIGN=center>9</TD>
+</TR>
+
+<TR>
+<TD ALIGN=center>10</TD>
+<TD ALIGN=center>11</TD>
+<TD ALIGN=center>12</TD>
+<TD ALIGN=center>13</TD>
+<TD ALIGN=center>14</TD>
+<TD ALIGN=center>15</TD>
+<TD ALIGN=center>16</TD>
+</TR>
+
+<TR>
+<TD ALIGN=center>17</TD>
+<TD ALIGN=center>18</TD>
+<TD ALIGN=center>19</TD>
+<TD ALIGN=center>20</TD>
+<TD ALIGN=center>21</TD>
+<TD ALIGN=center>22</TD>
+<TD ALIGN=center>23</TD>
+</TR>
+
+<TR>
+<TD ALIGN=center>24</TD>
+<TD ALIGN=center>25</TD>
+<TD ALIGN=center>26</TD>
+<TD ALIGN=center>27</TD>
+<TD ALIGN=center>28</TD>
+<TD ALIGN=center>29</TD>
+<TD ALIGN=center>30</TD>
+</TR>
+
+<TR>
+<TD ALIGN=center>31</TD>
+<TD ALIGN=center><font color="#d3d3d3">1</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">2</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">3</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">4</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">5</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">6</font></TD>
+</TR>
+
+</TABLE> 
+
+
+<TABLE  class="topic">
+<TR>
+<TD COLSPAN="7" ALIGN=center><B>June 2015</B></TD>
+</TR>
+
+
+<TR>
+<TD ALIGN=center>Sun</TD>
+<TD ALIGN=center>Mon</TD>
+<TD ALIGN=center>Tue</TD>
+<TD ALIGN=center>Wed</TD>
+<TD ALIGN=center>Thu</TD>
+<TD ALIGN=center>Fri</TD>
+<TD ALIGN=center>Sat</TD>
+</TR>
+
+<TR>
+<TD ALIGN=center><font color="#d3d3d3">31</font></TD>
+<TD ALIGN=center>1</TD>
+<TD ALIGN=center>2</TD>
+<TD ALIGN=center>3</TD>
+<TD ALIGN=center>4</TD>
+<TD ALIGN=center>5</TD>
+<TD ALIGN=center>6</TD>
+</TR>
+
+<TR>
+<TD ALIGN=center>7</TD>
+<TD ALIGN=center>8</TD>
+<TD ALIGN=center>9</TD>
+<TD ALIGN=center>10</TD>
+<TD ALIGN=center>11</TD>
+<TD ALIGN=center>12</TD>
+<TD ALIGN=center>13</TD>
+</TR>
+
+<TR>
+<TD ALIGN=center>14</TD>
+<TD ALIGN=center>15</TD>
+<TD ALIGN=center>16</TD>
+<TD ALIGN=center>17</TD>
+<TD ALIGN=center>18</TD>
+<TD ALIGN=center>19</TD>
+<TD ALIGN=center>20</TD>
+</TR>
+
+<TR>
+<TD ALIGN=center>21</TD>
+<TD ALIGN=center>22</TD>
+<TD ALIGN=center>23</TD>
+<TD ALIGN=center>24</TD>
+<TD ALIGN=center>25</TD>
+<TD ALIGN=center>26</TD>
+<TD ALIGN=center>27</TD>
+</TR>
+
+<TR>
+<TD ALIGN=center>28</TD>
+<TD ALIGN=center>29</TD>
+<TD ALIGN=center>30</TD>
+<TD ALIGN=center><font color="#d3d3d3">1</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">2</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">3</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">4</font></TD>
+
+</TR>
+<TR>
+<TD ALIGN=center><font color="#d3d3d3">5</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">6</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">7</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">8</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">9</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">10</font></TD>
+<TD ALIGN=center><font color="#d3d3d3">11</font></TD>
+</tr>
+
+</TABLE>
+ </div>
+
+</div>
+</div>
+<br/>
+<br/>
+<nav class="navbar navbar-default navbar-bottom">
+  <div class="container-fluid">
+    <div>
+      <ul class="nav navbar-nav">
+        
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li> 
+       
+      </ul>
+    </div>
+  </div>
+</nav>
+</body>
+</html>

@@ -1,0 +1,44 @@
+/* make sidebar nav vertical */ 
+@media (min-width: 768px) {
+  .sidebar-nav .navbar .navbar-collapse {
+    padding: 0;
+    max-height: none;
+  }
+  .sidebar-nav .navbar ul {
+    float: none;
+  }
+  .sidebar-nav .navbar ul:not {
+    display: block;
+  }
+  .sidebar-nav .navbar li {
+    float: none;
+    display: block;
+  }
+  .sidebar-nav .navbar li a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+
+.topic {
+	display: inline-block;
+	float:left;
+	width:30%;
+}
+
+.topic td{ height: 35px;
+		width:40px;
+		border:1px solid;
+		
+		}
+
+.cellRed
+{
+background-color: #00CCCC ;
+}
+
+.cellWhite
+{
+background-color: #FFFFFF ;
+}
+

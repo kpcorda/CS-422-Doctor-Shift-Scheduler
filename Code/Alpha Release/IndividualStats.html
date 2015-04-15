@@ -1,0 +1,246 @@
+<html>
+<head>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link type="text/css" rel="stylesheet" href="style13.css"/>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+       
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<script>
+$(document).ready(function(){
+$(".dropdown-menu li a").click(function(){
+  var selText = $(this).text();
+  $(this).parents('.btn-group').find('.dropdown-toggle').html(selText+' <span class="caret"></span>');
+	$('#'+selText).show();
+});
+});
+
+$(document).ready(function()
+{
+	$('#AndrewMitchell').hide();
+	$('#PaulMathew').hide();
+	$('#KevinAnderson').hide();
+	$('#PeterBatterson').hide();
+	$('#JohnBell').hide();
+	$('#RebeccaFiala').hide();
+	$('#GeoffreySanders').hide();
+	$('#MaxwellGarett').hide();
+	$('#AmyKavanagh').hide();
+});
+
+$(document).ready(function(){
+	$(".dropdown-menu li a").click(function(){
+	$(".DivsContent:visible").hide();
+	var selText = '#'+$(this).text();
+	$(selText).show();
+});
+});
+</script>
+<title>
+    DSS Individual Statistics Page
+</title>
+</head>
+<body>
+<div class="container">
+	<nav class="navbar navbar-inverse navbar-fixed-top" >
+	<div class="container-fluid">
+    <div class="navbar-header">
+     
+      <a class="navbar-brand" href="adminhome.php">Doctor Shift Scheduler</a>
+    </div>
+      	<ul class="nav navbar-nav">
+        <li><a href="adminhome.php"><span class="glyphicon glyphicon-home"> Home</span></a></li>
+        <li class="dropdown active" id="dd">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-stats"></span> &nbsp;Statistics</a>
+          <ul class="dropdown-menu">
+            <li><a href="IndividualStats.html"> Individual Statistics </a></li>
+            <li><a href="groupstats.php"> Group Statistics </a></li>
+          </ul>
+        </li>
+        <li><a href="vacation.php"><span class="glyphicon glyphicon-plane"></span> &nbsp; Vacations </a></li> 
+        <li><a href="addDoc.php"><span class="fa fa-user-md"></span> &nbsp; Doctors </a></li> 
+      	</ul>
+	<ul class="nav navbar-nav navbar-right">
+        <li><a href="logout.html"><span class="glyphicon glyphicon-log-out"></span> &nbsp;Logout</a></li>
+      	</ul>
+    	</div>
+            
+  	
+	</nav>
+	</div>
+	<div class="container">
+  		<div class="jumbotron">
+    			<h2>Individual Doctor Statistics</h2>
+  		</div>
+<div class="row">
+  <div class="table-responsive">
+   <table class="table table-striped">
+              <thead>
+                <tr>
+		
+                  <th class="col-md-1" style="text-align:center;">  <div class="btn-group">
+   <button type="button" class="btn btn-default dropdown-toggle" 
+      data-toggle="dropdown">
+      Select a Doctor <span class="caret"></span>
+   </button>
+   <ul class="dropdown-menu" >
+      <li><a href="#">AndrewMitchell</a></li>
+      <li><a href="#">PaulMathew</a></li>
+      <li><a href="#">KevinAnderson</a></li>
+      <li><a href="#">PeterBatterson</a></li>
+      <li><a href="#">GeoffreySanders</a></li>
+	<li><a href="#">RebeccaFiala</a></li>
+	<li><a href="#">JohnBell</a></li>
+	<li><a href="#">AmyKavanagh</a></li>
+	<li><a href="#">MaxwellGarett</a></li>
+	
+   </ul>
+</div>
+	</th>
+                </tr>
+              </thead>
+
+</table>
+</div>
+</div>
+<br/>
+<br/>
+<div class="table-responsive DivsContent" id="AndrewMitchell">
+<table class="table table-striped ">
+	<div class="span3"> 
+<tr> <td style="text-align: center;"><b> Initials : AM </b></td></tr>
+<tr> <td style="text-align: center;"><b> Doctor Name: Andrew Mitchell </b></td> </tr>          
+<tr> <td> Number of weekdays worked : </td> <td> 4 </td> </tr>
+<tr> <td> Number of weekends worked : </td> <td> 5 </td> </tr>
+<tr> <td> Number of holidays worked : </td> <td> 8 </td> </tr>
+<tr> <td> Number of days worked as On Site doctor : </td> <td> 10 </td> </tr>
+<tr> <td> Number of days worked as On Call Doctor : </td> <td> 12 </td> </tr>
+</table>
+</div>
+
+<div class="table-responsive DivsContent" id="PaulMathew">
+<table class="table table-striped">
+	<div class="span3">      
+<tr> <td style="text-align: center;"><b> Initials : PM </b></td></tr>
+<tr> <td style="text-align: center;"><b> Doctor Name: Paul Mathew </b></td> </tr>     
+<tr> <td> Number of weekdays worked : </td> <td> 6 </td> </tr>
+<tr> <td> Number of weekends worked : </td> <td> 7 </td> </tr>
+<tr> <td> Number of holidays worked : </td> <td> 10 </td> </tr>
+<tr> <td> Number of days worked as On Site doctor : </td> <td> 12 </td> </tr>
+<tr> <td> Number of days worked as On Call Doctor : </td> <td> 8 </td> </tr>
+</table>
+</div>
+
+<div class="table-responsive DivsContent" id="KevinAnderson">
+<table class="table table-striped">
+	<div class="span3">  
+<tr> <td style="text-align: center;"><b> Initials : KA </b></td></tr>
+<tr> <td style="text-align: center;"><b> Doctor Name: Kevin Anderson </b></td> </tr>          
+<tr> <td> Number of weekdays worked : </td> <td> 4 </td> </tr>
+<tr> <td> Number of weekends worked : </td> <td> 5 </td> </tr>
+<tr> <td> Number of holidays worked : </td> <td> 12 </td> </tr>
+<tr> <td> Number of days worked as On Site doctor : </td> <td> 5</td> </tr>
+<tr> <td> Number of days worked as On Call Doctor : </td> <td> 15 </td> </tr>
+</table>
+</div>
+
+
+<div class="table-responsive DivsContent" id="PeterBatterson">
+<table class="table table-striped">
+	<div class="span3">  
+<tr> <td style="text-align: center;"><b> Initials : PB </b></td></tr>
+<tr> <td style="text-align: center;"><b> Doctor Name: Peter Batterson </b></td> </tr>          
+<tr> <td> Number of weekdays worked : </td> <td> 15 </td> </tr>
+<tr> <td> Number of weekends worked : </td> <td> 10 </td> </tr>
+<tr> <td> Number of holidays worked : </td> <td> 9 </td> </tr>
+<tr> <td> Number of days worked as On Site doctor : </td> <td> 3 </td> </tr>
+<tr> <td> Number of days worked as On Call Doctor : </td> <td> 5 </td> </tr>
+</table>
+</div>
+
+<div class="table-responsive DivsContent" id="GeoffreySanders">
+<table class="table table-striped">
+	<div class="span3">        
+<tr> <td style="text-align: center;"><b> Initials : GS </b></td></tr>
+<tr> <td style="text-align: center;"> <b>Doctor Name: Geoffrey Sanders</b> </td> </tr>    
+<tr> <td> Number of weekdays worked : </td> <td> 20 </td> </tr>
+<tr> <td> Number of weekends worked : </td> <td> 7 </td> </tr>
+<tr> <td> Number of holidays worked : </td> <td> 2 </td> </tr>
+<tr> <td> Number of days worked as On Site doctor : </td> <td> 0 </td> </tr>
+<tr> <td> Number of days worked as On Call Doctor : </td> <td> 12 </td> </tr>
+</table>
+</div>
+
+
+<div class="table-responsive DivsContent" id="RebeccaFiala">
+<table class="table table-striped">
+	<div class="span3">         
+<tr> <td style="text-align: center;"><b> Initials : RF </b></td></tr>
+<tr> <td style="text-align: center;"><b> Doctor Name: Rebecca Fiala </b> </td> </tr>   
+<tr> <td> Number of weekdays worked : </td> <td> 13</td> </tr>
+<tr> <td> Number of weekends worked : </td> <td> 8</td> </tr>
+<tr> <td> Number of holidays worked : </td> <td> 10 </td> </tr>
+<tr> <td> Number of days worked as On Site doctor : </td> <td> 11 </td> </tr>
+<tr> <td> Number of days worked as On Call Doctor : </td> <td> 15 </td> </tr>
+</table>
+</div>
+
+
+<div class="table-responsive DivsContent" id="JohnBell">
+<table class="table table-striped">
+	<div class="span3">         
+<tr> <td style="text-align: center;"><b> Initials : JB </b></td></tr>
+<tr> <td style="text-align: center;"><b> Doctor Name: John Bell </b></td> </tr>   
+<tr> <td> Number of weekdays worked : </td> <td> 17 </td> </tr>
+<tr> <td> Number of weekends worked : </td> <td> 10 </td> </tr>
+<tr> <td> Number of holidays worked : </td> <td> 6 </td> </tr>
+<tr> <td> Number of days worked as On Site doctor : </td> <td> 10 </td> </tr>
+<tr> <td> Number of days worked as On Call Doctor : </td> <td> 0 </td> </tr>
+</table>
+</div>
+</table>
+<div class="table-responsive DivsContent" id="AmyKavanagh">
+<table class="table table-striped">
+	<div class="span3">         
+<tr> <td style="text-align: center;"><b> Initials : AK </b></td></tr>
+<tr> <td style="text-align: center;"><b> Doctor Name: Amy Kavanagh </b></td> </tr>   
+<tr> <td> Number of weekdays worked : </td> <td> 20 </td> </tr>
+<tr> <td> Number of weekends worked : </td> <td> 7 </td> </tr>
+<tr> <td> Number of holidays worked : </td> <td> 9 </td> </tr>
+<tr> <td> Number of days worked as On Site doctor : </td> <td> 2 </td> </tr>
+<tr> <td> Number of days worked as On Call Doctor : </td> <td> 4 </td> </tr>
+</table>
+</div>
+
+
+<div class="table-responsive DivsContent" id="MaxwellGarett">
+<table class="table table-striped">
+	<div class="span3">         
+<tr> <td style="text-align: center;"> <b>Initials : MG</b> </td></tr>
+<tr> <td style="text-align: center;"> <b>Doctor Name: Maxwell Garrett </b></td> </tr>   
+<tr> <td> Number of weekdays worked : </td> <td> 25 </td> </tr>
+<tr> <td> Number of weekends worked : </td> <td> 17 </td> </tr>
+<tr> <td> Number of holidays worked : </td> <td> 8 </td> </tr>
+<tr> <td> Number of days worked as On Site doctor : </td> <td> 15 </td> </tr>
+<tr> <td> Number of days worked as On Call Doctor : </td> <td> 10 </td> </tr>
+</table>
+</div>
+
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container-fluid">
+    <div>
+      <ul class="nav navbar-nav">
+        
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li> 
+       
+      </ul>
+    </div>
+  </div>
+</nav>
+</body>
+</html>

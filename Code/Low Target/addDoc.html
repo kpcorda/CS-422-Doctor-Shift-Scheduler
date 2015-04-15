@@ -1,0 +1,1430 @@
+<html>
+<head>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link type="text/css" rel="stylesheet" href="style11.css"/>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	
+
+
+<script>
+$(document).ready(function(){
+	$("#table2").hide();
+	$("#table3").hide();
+$("#table4").hide();
+$("#table5").hide();
+$("#table6").hide();
+$("#table7").hide();
+$("#table8").hide();
+$("#table9").hide();
+$("#table10").hide();
+});
+
+$(document).ready(function()
+{
+	$("#initial1").click(function()
+	{
+		$(".DivsContent:visible").hide();
+		$("#table2").show();
+		$('#save1').hide();
+		$('#cancel1').hide();
+	});
+	$("#initial2").click(function()
+	{
+		$(".DivsContent:visible").hide();
+		$("#table3").show();
+$('#save2').hide();
+		$('#cancel2').hide();
+	});
+	$("#initial3").click(function()
+	{
+		$(".DivsContent:visible").hide();
+		$("#table4").show();
+$('#save3').hide();
+		$('#cancel3').hide();
+	});
+	$("#initial4").click(function()
+	{
+		$(".DivsContent:visible").hide();
+		$("#table5").show();
+$('#save4').hide();
+		$('#cancel4').hide();
+	});
+	$("#initial5").click(function()
+	{
+		$(".DivsContent:visible").hide();
+		$("#table6").show();
+$('#save5').hide();
+		$('#cancel5').hide();
+	});
+	$("#initial6").click(function()
+	{
+		$(".DivsContent:visible").hide();
+		$("#table7").show();
+$('#save6').hide();
+		$('#cancel6').hide();
+	});
+	$("#initial7").click(function()
+	{
+		$(".DivsContent:visible").hide();
+		$("#table8").show();
+$('#save7').hide();
+		$('#cancel7').hide();
+	});
+	$("#initial8").click(function()
+	{
+		$(".DivsContent:visible").hide();
+		$("#table9").show();
+$('#save8').hide();
+		$('#cancel8').hide();
+	});
+	$("#initial9").click(function()
+	{
+		$(".DivsContent:visible").hide();
+		$("#table10").show();
+	$('#save9').hide();
+		$('#cancel9').hide();
+	});
+	
+});
+
+$(document).ready(function()
+{
+	$("#deleteconfirm1").click(function()
+	{
+		$("#ini1").remove();
+		$("#table2").remove();
+		 
+	});
+	$("#deleteconfirm2").click(function()
+	{
+		$("#ini2").remove();
+		$("#table3").remove();
+		 
+	});
+	$("#deleteconfirm3").click(function()
+	{
+		$("#ini3").remove();
+		$("#table4").remove();
+		 
+	});
+	$("#deleteconfirm4").click(function()
+	{
+		$("#ini4").remove();
+		$("#table2").remove();
+		 
+	});
+	$("#deleteconfirm5").click(function()
+	{
+		$("#ini5").remove();
+		$("#table4").remove();
+		 
+	});
+	$("#deleteconfirm6").click(function()
+	{
+		$("#ini6").remove();
+		$("#table5").remove();
+		 
+	});
+	$("#deleteconfirm7").click(function()
+	{
+		$("#ini7").remove();
+		$("#table6").remove();
+		 
+	});
+	$("#deleteconfirm8").click(function()
+	{
+		$("#ini8").remove();
+		$("#table7").remove();
+		 
+	});
+	$("#deleteconfirm9").click(function()
+	{
+		$("#ini9").remove();
+		$("#table8").remove();
+		 
+	});
+});
+
+$(document).ready(function()
+{
+	$('#edit1').click(function() {
+	$('#edit1').hide();
+	$('#delete1').hide();
+	$('#save1').show();
+	$('#cancel1').show();
+	 var init = $('#init').html();
+var fn = $('#firstn').html();
+var ln = $('#lastn').html();
+var sc = $('#scy').html();
+var pc = $('#pcy').html();
+var input1 = $('<input type="text" placeholder="' + init + '" id="tinit" />');
+var input2= $('<input type="text" placeholder="' + fn + '" id="tfirstn"/>');
+var input3 = $('<input type="text" placeholder="' + ln + '" id="tlastn"/>');
+var input4 = $('<input type="text" placeholder="' + sc + '" id="tsc"/>');
+var input5 = $('<input type="text" placeholder="' + pc + '" id="tpc"/>');
+ $('#init').text('').append(input1);
+ $('#firstn').text('').append(input2);
+ $('#lastn').text('').append(input3);
+ $('#scy').text('').append(input4);
+ $('#pcy').text('').append(input5);
+});
+	$('#save1').click(function(){
+	var init = $('#tinit').val();
+	var fn = $('#tfirstn').val();
+var ln = $('#tlastn').val();
+var sc = $('#tsc').val();
+var pc = $('#tpc').val();
+
+var input1 = $('<label id="init">' + init + '<label/>');
+var input2= $('<label id="firstn">' + fn + '<label/>');
+var input3 = $('<label id="lastn">' + ln + '<label/>');
+var input4 = $('<label id="scy">' + sc + '<label/>');
+var input5 = $('<label id="pcy">' + pc + '<label/>');
+ $('#init').text('').append(input1);
+ $('#firstn').text('').append(input2);
+ $('#lastn').text('').append(input3);
+ $('#scy').text('').append(input4);
+ $('#pcy').text('').append(input5);
+$('#initial1').text('').append(init);
+	$('#edit1').show();
+	$('#delete1').show();
+	$('#save1').hide();
+	$('#cancel1').hide();
+
+
+});
+
+$('#cancel1').click(function(){	
+	
+	var init = $('#tinit').attr('placeholder');
+	var fn = $('#tfirstn').attr('placeholder');
+var ln = $('#tlastn').attr('placeholder');
+var sc = $('#tsc').attr('placeholder');
+var pc = $('#tpc').attr('placeholder');
+ $('#init').text('').append(init);
+ $('#firstn').text('').append(fn);
+ $('#lastn').text('').append(ln);
+ $('#scy').text('').append(sc);
+ $('#pcy').text('').append(pc);
+	$('#edit1').show();
+	$('#delete1').show();
+	$('#save1').hide();
+	$('#cancel1').hide();
+});
+});
+$(document).ready(function()
+{
+	$('#edit2').click(function() {
+	$('#edit2').hide();
+	$('#delete2').hide();
+	$('#save2').show();
+	$('#cancel2').show();
+	 var init = $('#init2').html();
+var fn = $('#firstn2').html();
+var ln = $('#lastn2').html();
+var sc = $('#scy2').html();
+var pc = $('#pcy2').html();
+var input1 = $('<input type="text" placeholder="' + init + '" id="tinit2" />');
+var input2= $('<input type="text" placeholder="' + fn + '" id="tfirstn2"/>');
+var input3 = $('<input type="text" placeholder="' + ln + '" id="tlastn2"/>');
+var input4 = $('<input type="text" placeholder="' + sc + '" id="tsc2"/>');
+var input5 = $('<input type="text" placeholder="' + pc + '" id="tpc2"/>');
+ $('#init2').text('').append(input1);
+ $('#firstn2').text('').append(input2);
+ $('#lastn2').text('').append(input3);
+ $('#scy2').text('').append(input4);
+ $('#pcy2').text('').append(input5);
+});
+	$('#save2').click(function(){
+	var init = $('#tinit2').val();
+	var fn = $('#tfirstn2').val();
+var ln = $('#tlastn2').val();
+var sc = $('#tsc2').val();
+var pc = $('#tpc2').val();
+
+var input1 = $('<label id="init2">' + init + '<label/>');
+var input2= $('<label id="firstn2">' + fn + '<label/>');
+var input3 = $('<label id="lastn2">' + ln + '<label/>');
+var input4 = $('<label id="scy2">' + sc + '<label/>');
+var input5 = $('<label id="pcy2">' + pc + '<label/>');
+ $('#init2').text('').append(input1);
+ $('#firstn2').text('').append(input2);
+ $('#lastn2').text('').append(input3);
+ $('#scy2').text('').append(input4);
+ $('#pcy2').text('').append(input5);
+$('#initial2').text('').append(init);
+	$('#edit2').show();
+	$('#delete2').show();
+	$('#save2').hide();
+	$('#cancel2').hide();
+
+
+});
+
+$('#cancel2').click(function(){	
+	
+	var init = $('#tinit2').attr('placeholder');
+	var fn = $('#tfirstn2').attr('placeholder');
+var ln = $('#tlastn2').attr('placeholder');
+var sc = $('#tsc2').attr('placeholder');
+var pc = $('#tpc2').attr('placeholder');
+ $('#init2').text('').append(init);
+ $('#firstn2').text('').append(fn);
+ $('#lastn2').text('').append(ln);
+ $('#scy2').text('').append(sc);
+ $('#pcy2').text('').append(pc);
+	$('#edit2').show();
+	$('#delete2').show();
+	$('#save2').hide();
+	$('#cancel2').hide();
+});
+});
+
+$(document).ready(function()
+{
+	$('#edit3').click(function() {
+	$('#edit3').hide();
+	$('#delete3').hide();
+	$('#save3').show();
+	$('#cancel3').show();
+	 var init = $('#init3').html();
+var fn = $('#firstn3').html();
+var ln = $('#lastn3').html();
+var sc = $('#scy3').html();
+var pc = $('#pcy3').html();
+var input1 = $('<input type="text" placeholder="' + init + '" id="tinit3" />');
+var input2= $('<input type="text" placeholder="' + fn + '" id="tfirstn3"/>');
+var input3 = $('<input type="text" placeholder="' + ln + '" id="tlastn3"/>');
+var input4 = $('<input type="text" placeholder="' + sc + '" id="tsc3"/>');
+var input5 = $('<input type="text" placeholder="' + pc + '" id="tpc3"/>');
+ $('#init3').text('').append(input1);
+ $('#firstn3').text('').append(input2);
+ $('#lastn3').text('').append(input3);
+ $('#scy3').text('').append(input4);
+ $('#pcy3').text('').append(input5);
+});
+	$('#save3').click(function(){
+	var init = $('#tinit3').val();
+	var fn = $('#tfirstn3').val();
+var ln = $('#tlastn3').val();
+var sc = $('#tsc3').val();
+var pc = $('#tpc3').val();
+
+var input1 = $('<label id="init3">' + init + '<label/>');
+var input2= $('<label id="firstn3">' + fn + '<label/>');
+var input3 = $('<label id="lastn3">' + ln + '<label/>');
+var input4 = $('<label id="scy3">' + sc + '<label/>');
+var input5 = $('<label id="pcy3">' + pc + '<label/>');
+ $('#init3').text('').append(input1);
+ $('#firstn3').text('').append(input2);
+ $('#lastn3').text('').append(input3);
+ $('#scy3').text('').append(input4);
+ $('#pcy3').text('').append(input5);
+$('#initial3').text('').append(init);
+	$('#edit3').show();
+	$('#delete3').show();
+	$('#save3').hide();
+	$('#cancel3').hide();
+
+
+});
+
+$('#cancel3').click(function(){	
+	
+	var init = $('#tinit3').attr('placeholder');
+	var fn = $('#tfirstn3').attr('placeholder');
+var ln = $('#tlastn3').attr('placeholder');
+var sc = $('#tsc3').attr('placeholder');
+var pc = $('#tpc3').attr('placeholder');
+ $('#init3').text('').append(init);
+ $('#firstn3').text('').append(fn);
+ $('#lastn3').text('').append(ln);
+ $('#scy3').text('').append(sc);
+ $('#pcy3').text('').append(pc);
+	$('#edit3').show();
+	$('#delete3').show();
+	$('#save3').hide();
+	$('#cancel3').hide();
+});
+});
+
+$(document).ready(function()
+{
+	$('#edit4').click(function() {
+	$('#edit4').hide();
+	$('#delete4').hide();
+	$('#save4').show();
+	$('#cancel4').show();
+	 var init = $('#init4').html();
+var fn = $('#firstn4').html();
+var ln = $('#lastn4').html();
+var sc = $('#scy4').html();
+var pc = $('#pcy4').html();
+var input1 = $('<input type="text" placeholder="' + init + '" id="tinit4" />');
+var input2= $('<input type="text" placeholder="' + fn + '" id="tfirstn4"/>');
+var input3 = $('<input type="text" placeholder="' + ln + '" id="tlastn4"/>');
+var input4 = $('<input type="text" placeholder="' + sc + '" id="tsc4"/>');
+var input5 = $('<input type="text" placeholder="' + pc + '" id="tpc4"/>');
+ $('#init4').text('').append(input1);
+ $('#firstn4').text('').append(input2);
+ $('#lastn4').text('').append(input3);
+ $('#scy4').text('').append(input4);
+ $('#pcy4').text('').append(input5);
+});
+	$('#save4').click(function(){
+	var init = $('#tinit4').val();
+	var fn = $('#tfirstn4').val();
+var ln = $('#tlastn4').val();
+var sc = $('#tsc4').val();
+var pc = $('#tpc4').val();
+
+var input1 = $('<label id="init4">' + init + '<label/>');
+var input2= $('<label id="firstn4">' + fn + '<label/>');
+var input3 = $('<label id="lastn4">' + ln + '<label/>');
+var input4 = $('<label id="scy4">' + sc + '<label/>');
+var input5 = $('<label id="pcy4">' + pc + '<label/>');
+ $('#init4').text('').append(input1);
+ $('#firstn4').text('').append(input2);
+ $('#lastn4').text('').append(input3);
+ $('#scy4').text('').append(input4);
+ $('#pcy4').text('').append(input5);
+$('#initial4').text('').append(init);
+	$('#edit4').show();
+	$('#delete4').show();
+	$('#save4').hide();
+	$('#cancel4').hide();
+
+
+});
+
+$('#cancel4').click(function(){	
+	
+	var init = $('#tinit4').attr('placeholder');
+	var fn = $('#tfirstn4').attr('placeholder');
+var ln = $('#tlastn4').attr('placeholder');
+var sc = $('#tsc4').attr('placeholder');
+var pc = $('#tpc4').attr('placeholder');
+ $('#init4').text('').append(init);
+ $('#firstn4').text('').append(fn);
+ $('#lastn4').text('').append(ln);
+ $('#scy4').text('').append(sc);
+ $('#pcy4').text('').append(pc);
+	$('#edit4').show();
+	$('#delete4').show();
+	$('#save4').hide();
+	$('#cancel4').hide();
+});
+});
+
+$(document).ready(function()
+{
+	$('#edit5').click(function() {
+	$('#edit5').hide();
+	$('#delete5').hide();
+	$('#save5').show();
+	$('#cancel5').show();
+	 var init = $('#init5').html();
+var fn = $('#firstn5').html();
+var ln = $('#lastn5').html();
+var sc = $('#scy5').html();
+var pc = $('#pcy5').html();
+var input1 = $('<input type="text" placeholder="' + init + '" id="tinit5" />');
+var input2= $('<input type="text" placeholder="' + fn + '" id="tfirstn5"/>');
+var input3 = $('<input type="text" placeholder="' + ln + '" id="tlastn5"/>');
+var input4 = $('<input type="text" placeholder="' + sc + '" id="tsc5"/>');
+var input5 = $('<input type="text" placeholder="' + pc + '" id="tpc5"/>');
+ $('#init5').text('').append(input1);
+ $('#firstn5').text('').append(input2);
+ $('#lastn5').text('').append(input3);
+ $('#scy5').text('').append(input4);
+ $('#pcy5').text('').append(input5);
+});
+	$('#save5').click(function(){
+	var init = $('#tinit5').val();
+	var fn = $('#tfirstn5').val();
+var ln = $('#tlastn5').val();
+var sc = $('#tsc5').val();
+var pc = $('#tpc5').val();
+
+var input1 = $('<label id="init5">' + init + '<label/>');
+var input2= $('<label id="firstn5">' + fn + '<label/>');
+var input3 = $('<label id="lastn5">' + ln + '<label/>');
+var input4 = $('<label id="scy5">' + sc + '<label/>');
+var input5 = $('<label id="pcy5">' + pc + '<label/>');
+ $('#init5').text('').append(input1);
+ $('#firstn5').text('').append(input2);
+ $('#lastn5').text('').append(input3);
+ $('#scy5').text('').append(input4);
+ $('#pcy5').text('').append(input5);
+$('#initial5').text('').append(init);
+	$('#edit5').show();
+	$('#delete5').show();
+	$('#save5').hide();
+	$('#cancel5').hide();
+
+
+});
+
+$('#cancel5').click(function(){	
+	
+	var init = $('#tinit5').attr('placeholder');
+	var fn = $('#tfirstn5').attr('placeholder');
+var ln = $('#tlastn5').attr('placeholder');
+var sc = $('#tsc5').attr('placeholder');
+var pc = $('#tpc5').attr('placeholder');
+ $('#init5').text('').append(init);
+ $('#firstn5').text('').append(fn);
+ $('#lastn5').text('').append(ln);
+ $('#scy5').text('').append(sc);
+ $('#pcy5').text('').append(pc);
+	$('#edit5').show();
+	$('#delete5').show();
+	$('#save5').hide();
+	$('#cancel5').hide();
+});
+});
+
+$(document).ready(function()
+{
+	$('#edit6').click(function() {
+	$('#edit6').hide();
+	$('#delete6').hide();
+	$('#save6').show();
+	$('#cancel6').show();
+	 var init = $('#init6').html();
+var fn = $('#firstn6').html();
+var ln = $('#lastn6').html();
+var sc = $('#scy6').html();
+var pc = $('#pcy6').html();
+var input1 = $('<input type="text" placeholder="' + init + '" id="tinit6" />');
+var input2= $('<input type="text" placeholder="' + fn + '" id="tfirstn6"/>');
+var input3 = $('<input type="text" placeholder="' + ln + '" id="tlastn6"/>');
+var input4 = $('<input type="text" placeholder="' + sc + '" id="tsc6"/>');
+var input5 = $('<input type="text" placeholder="' + pc + '" id="tpc6"/>');
+ $('#init6').text('').append(input1);
+ $('#firstn6').text('').append(input2);
+ $('#lastn6').text('').append(input3);
+ $('#scy6').text('').append(input4);
+ $('#pcy6').text('').append(input5);
+});
+	$('#save6').click(function(){
+	var init = $('#tinit6').val();
+	var fn = $('#tfirstn6').val();
+var ln = $('#tlastn6').val();
+var sc = $('#tsc6').val();
+var pc = $('#tpc6').val();
+
+var input1 = $('<label id="init6">' + init + '<label/>');
+var input2= $('<label id="firstn6">' + fn + '<label/>');
+var input3 = $('<label id="lastn6">' + ln + '<label/>');
+var input4 = $('<label id="scy6">' + sc + '<label/>');
+var input5 = $('<label id="pcy6">' + pc + '<label/>');
+ $('#init6').text('').append(input1);
+ $('#firstn6').text('').append(input2);
+ $('#lastn6').text('').append(input3);
+ $('#scy6').text('').append(input4);
+ $('#pcy6').text('').append(input5);
+$('#initial6').text('').append(init);
+	$('#edit6').show();
+	$('#delete6').show();
+	$('#save6').hide();
+	$('#cancel6').hide();
+
+
+});
+
+$('#cancel6').click(function(){	
+	
+	var init = $('#tinit6').attr('placeholder');
+	var fn = $('#tfirstn6').attr('placeholder');
+var ln = $('#tlastn6').attr('placeholder');
+var sc = $('#tsc6').attr('placeholder');
+var pc = $('#tpc6').attr('placeholder');
+ $('#init6').text('').append(init);
+ $('#firstn6').text('').append(fn);
+ $('#lastn6').text('').append(ln);
+ $('#scy6').text('').append(sc);
+ $('#pcy6').text('').append(pc);
+	$('#edit6').show();
+	$('#delete6').show();
+	$('#save6').hide();
+	$('#cancel6').hide();
+});
+});
+
+$(document).ready(function()
+{
+	$('#edit7').click(function() {
+	$('#edit7').hide();
+	$('#delete7').hide();
+	$('#save7').show();
+	$('#cancel7').show();
+	 var init = $('#init7').html();
+var fn = $('#firstn7').html();
+var ln = $('#lastn7').html();
+var sc = $('#scy7').html();
+var pc = $('#pcy7').html();
+var input1 = $('<input type="text" placeholder="' + init + '" id="tinit7" />');
+var input2= $('<input type="text" placeholder="' + fn + '" id="tfirstn7"/>');
+var input3 = $('<input type="text" placeholder="' + ln + '" id="tlastn7"/>');
+var input4 = $('<input type="text" placeholder="' + sc + '" id="tsc7"/>');
+var input5 = $('<input type="text" placeholder="' + pc + '" id="tpc7"/>');
+ $('#init7').text('').append(input1);
+ $('#firstn7').text('').append(input2);
+ $('#lastn7').text('').append(input3);
+ $('#scy7').text('').append(input4);
+ $('#pcy7').text('').append(input5);
+});
+	$('#save7').click(function(){
+	var init = $('#tinit7').val();
+	var fn = $('#tfirstn7').val();
+var ln = $('#tlastn7').val();
+var sc = $('#tsc7').val();
+var pc = $('#tpc7').val();
+
+var input1 = $('<label id="init7">' + init + '<label/>');
+var input2= $('<label id="firstn7">' + fn + '<label/>');
+var input3 = $('<label id="lastn7">' + ln + '<label/>');
+var input4 = $('<label id="scy7">' + sc + '<label/>');
+var input5 = $('<label id="pcy7">' + pc + '<label/>');
+ $('#init7').text('').append(input1);
+ $('#firstn7').text('').append(input2);
+ $('#lastn7').text('').append(input3);
+ $('#scy7').text('').append(input4);
+ $('#pcy7').text('').append(input5);
+$('#initial7').text('').append(init);
+	$('#edit7').show();
+	$('#delete7').show();
+	$('#save7').hide();
+	$('#cancel7').hide();
+
+
+});
+
+$('#cancel7').click(function(){	
+	
+	var init = $('#tinit7').attr('placeholder');
+	var fn = $('#tfirstn7').attr('placeholder');
+var ln = $('#tlastn7').attr('placeholder');
+var sc = $('#tsc7').attr('placeholder');
+var pc = $('#tpc7').attr('placeholder');
+ $('#init7').text('').append(init);
+ $('#firstn7').text('').append(fn);
+ $('#lastn7').text('').append(ln);
+ $('#scy7').text('').append(sc);
+ $('#pcy7').text('').append(pc);
+	$('#edit7').show();
+	$('#delete7').show();
+	$('#save7').hide();
+	$('#cancel7').hide();
+});
+});
+
+$(document).ready(function()
+{
+	$('#edit8').click(function() {
+	$('#edit8').hide();
+	$('#delete8').hide();
+	$('#save8').show();
+	$('#cancel8').show();
+	 var init = $('#init8').html();
+var fn = $('#firstn8').html();
+var ln = $('#lastn8').html();
+var sc = $('#scy8').html();
+var pc = $('#pcy8').html();
+var input1 = $('<input type="text" placeholder="' + init + '" id="tinit8" />');
+var input2= $('<input type="text" placeholder="' + fn + '" id="tfirstn8"/>');
+var input3 = $('<input type="text" placeholder="' + ln + '" id="tlastn8"/>');
+var input4 = $('<input type="text" placeholder="' + sc + '" id="tsc8"/>');
+var input5 = $('<input type="text" placeholder="' + pc + '" id="tpc8"/>');
+ $('#init8').text('').append(input1);
+ $('#firstn8').text('').append(input2);
+ $('#lastn8').text('').append(input3);
+ $('#scy8').text('').append(input4);
+ $('#pcy8').text('').append(input5);
+});
+	$('#save8').click(function(){
+	var init = $('#tinit8').val();
+	var fn = $('#tfirstn8').val();
+var ln = $('#tlastn8').val();
+var sc = $('#tsc8').val();
+var pc = $('#tpc8').val();
+
+var input1 = $('<label id="init8">' + init + '<label/>');
+var input2= $('<label id="firstn8">' + fn + '<label/>');
+var input3 = $('<label id="lastn8">' + ln + '<label/>');
+var input4 = $('<label id="scy8">' + sc + '<label/>');
+var input5 = $('<label id="pcy8">' + pc + '<label/>');
+ $('#init8').text('').append(input1);
+ $('#firstn8').text('').append(input2);
+ $('#lastn8').text('').append(input3);
+ $('#scy8').text('').append(input4);
+ $('#pcy8').text('').append(input5);
+$('#initial8').text('').append(init);
+	$('#edit8').show();
+	$('#delete8').show();
+	$('#save18').hide();
+	$('#cancel8').hide();
+
+
+});
+
+$('#cancel8').click(function(){	
+	
+	var init = $('#tinit8').attr('placeholder');
+	var fn = $('#tfirstn8').attr('placeholder');
+var ln = $('#tlastn8').attr('placeholder');
+var sc = $('#tsc8').attr('placeholder');
+var pc = $('#tpc8').attr('placeholder');
+ $('#init8').text('').append(init);
+ $('#firstn8').text('').append(fn);
+ $('#lastn8').text('').append(ln);
+ $('#scy8').text('').append(sc);
+ $('#pcy8').text('').append(pc);
+	$('#edit8').show();
+	$('#delete8').show();
+	$('#save8').hide();
+	$('#cancel8').hide();
+});
+});
+
+$(document).ready(function()
+{
+	$('#edit9').click(function() {
+	$('#edit9').hide();
+	$('#delete9').hide();
+	$('#save9').show();
+	$('#cancel9').show();
+	 var init = $('#init9').html();
+var fn = $('#firstn9').html();
+var ln = $('#lastn9').html();
+var sc = $('#scy9').html();
+var pc = $('#pcy9').html();
+var input1 = $('<input type="text" placeholder="' + init + '" id="tinit9" />');
+var input2= $('<input type="text" placeholder="' + fn + '" id="tfirstn9"/>');
+var input3 = $('<input type="text" placeholder="' + ln + '" id="tlastn9"/>');
+var input4 = $('<input type="text" placeholder="' + sc + '" id="tsc9"/>');
+var input5 = $('<input type="text" placeholder="' + pc + '" id="tpc9"/>');
+ $('#init9').text('').append(input1);
+ $('#firstn9').text('').append(input2);
+ $('#lastn9').text('').append(input3);
+ $('#scy9').text('').append(input4);
+ $('#pcy9').text('').append(input5);
+});
+	$('#save9').click(function(){
+	var init = $('#tinit9').val();
+	var fn = $('#tfirstn9').val();
+var ln = $('#tlastn9').val();
+var sc = $('#tsc9').val();
+var pc = $('#tpc9').val();
+
+var input1 = $('<label id="init9">' + init + '<label/>');
+var input2= $('<label id="firstn9">' + fn + '<label/>');
+var input3 = $('<label id="lastn9">' + ln + '<label/>');
+var input4 = $('<label id="scy9">' + sc + '<label/>');
+var input5 = $('<label id="pcy9">' + pc + '<label/>');
+ $('#init9').text('').append(input1);
+ $('#firstn9').text('').append(input2);
+ $('#lastn9').text('').append(input3);
+ $('#scy9').text('').append(input4);
+ $('#pcy9').text('').append(input5);
+$('#initial9').text('').append(init);
+	$('#edit9').show();
+	$('#delete9').show();
+	$('#save9').hide();
+	$('#cancel9').hide();
+
+
+});
+
+$('#cancel9').click(function(){	
+	
+	var init = $('#tinit9').attr('placeholder');
+	var fn = $('#tfirstn9').attr('placeholder');
+var ln = $('#tlastn9').attr('placeholder');
+var sc = $('#tsc9').attr('placeholder');
+var pc = $('#tpc9').attr('placeholder');
+ $('#init9').text('').append(init);
+ $('#firstn9').text('').append(fn);
+ $('#lastn9').text('').append(ln);
+ $('#scy9').text('').append(sc);
+ $('#pcy9').text('').append(pc);
+	$('#edit9').show();
+	$('#delete9').show();
+	$('#save9').hide();
+	$('#cancel9').hide();
+});
+});
+
+
+</script>
+<title>DSS Doctors Page</title>
+</head>
+<body>
+
+<div class="container">
+	<nav class="navbar navbar-inverse navbar-fixed-top" >
+	<div class="container-fluid">
+    <div class="navbar-header">
+     
+      <a class="navbar-brand" href="home.html">Doctor Shift Scheduler</a>
+    </div>
+      	<ul class="nav navbar-nav">
+        <li><a href="home.html"><span class="glyphicon glyphicon-home"> Home</span></a></li>
+        <li class="dropdown" id="dd">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-stats"></span> &nbsp;Statistics</a>
+          <ul class="dropdown-menu">
+            <li><a href="IndividualStats.html"> Individual Statistics </a></li>
+            <li><a href="groupstats.html"> Group Statistics </a></li>
+          </ul>
+        </li>
+        <li><a href="vacation.html"><span class="glyphicon glyphicon-plane"></span> &nbsp; Vacations </a></li> 
+        <li class="active"><a href="#"><span class="fa fa-user-md"></span> &nbsp; Doctors </a></li> 
+      	</ul>
+	<ul class="nav navbar-nav navbar-right">
+        <li><a href="logout.html"><span class="glyphicon glyphicon-log-out"></span> &nbsp;Logout</a></li>
+      	</ul>
+    	</div>
+            
+  	
+	</nav>
+	</div>
+	<div class="container">
+  		<div class="jumbotron">
+    			<h2>Doctor Shift Scheduler</h2>
+  		</div>
+<div class="row">
+  <div class="table-responsive col-md-6">
+<h2 class="sub-header">Existing Doctors</h2>
+	<div class="span3">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th class="col-md-1">Initials</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="col-md-1" id="ini1"><a id="initial1" href="#">AM</a></td>
+                  
+                </tr>
+                <tr>
+                  <td class="col-md-1" id="ini2"><a id="initial2" href="#">PM</a></td>
+                  
+                </tr>
+                 <tr>
+                  <td class="col-md-1" id="ini3"><a id="initial3" href="#">KA</a></td>
+                 
+                </tr>
+<tr>
+                  <td class="col-md-1" id="ini4"><a id="initial4" href="#">PB</a></td>
+                 
+                </tr>
+<tr>
+                  <td class="col-md-1" id="ini5"><a id="initial5" href="#">GS</a></td>
+                 
+                </tr>
+<tr>
+                  <td class="col-md-1" id="ini6"><a id="initial6" href="#">RF</a></td>
+                 
+                </tr>
+<tr>
+                  <td class="col-md-1" id="ini7"><a id="initial7" href="#">JB</a></td>
+                 
+                </tr>
+<tr>
+                  <td class="col-md-1" id="ini8"><a id="initial8" href="#">AK</a></td>
+                 
+                </tr>
+<tr>
+                  <td class="col-md-1" id="ini9"><a id="initial9" href="#">MG</a></td>
+                 
+                </tr>
+
+              </tbody>
+            </table>
+	</div>
+	
+    
+	<br/>
+	<br/>
+        
+</div>
+<h2 class="sub-header">Doctor Details</h2>
+          <div class="table-responsive col-md-6">
+            <table class="table table-striped DivsContent" id="table2">
+              <thead>
+              </thead>
+              <tbody>
+		<tr> 
+			<td class="col-md-1"> Initials : </td> <td class="col-md-1"> <label id="init">AM</label></td>
+		</tr>
+                <tr>
+                  <td class="col-md-1">First Name :</td><td class="col-md-1"> <label id="firstn">Andrew</label></td>
+                 
+                </tr>
+                <tr>
+                  <td class="col-md-1">Last Name: </td>  <td class="col-md-1"><label id="lastn">Mitchell</label> </td>
+                  
+                </tr>
+                 <tr>
+                  <td class="col-md-1">SC</td> <td class="col-md-1"><label id="scy">YES </label></td>
+                 
+                </tr>
+ <tr>
+                  <td class="col-md-1">PC</td> <td class="col-md-1"><label id="pcy">YES </label></td>
+                 
+                </tr>
+	<tr>
+		<td class="col-md-1"> <button type="button" class="btn btn-default" id="edit1">Edit Doctor Fields</button></td>
+                <td class="col-md-1"> <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal2" id="delete1">Delete Doctor</button></td>
+		</tr>	
+		<tr><td class="col-md-1"> <button type="button" class="btn btn-default" id="save1">Save </button></td>
+		<td class="col-md-1"> <button type="button" class="btn btn-default" id="cancel1">Cancel All changes</button></td></tr>
+<!-- Modal -->
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" 
+   aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="close" 
+               data-dismiss="modal" aria-hidden="true">
+                  &times;
+            </button>
+            <h4 class="modal-title" id="myModalLabel">
+               Are you Sure you want to delete this doctor?
+            </h4>
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-default" 
+               data-dismiss="modal">Cancel
+            </button>
+            <button type="button" class="btn btn-primary" id="deleteconfirm1" data-dismiss="modal">
+               Delete 
+            </button>
+         </div>
+      </div><!-- /.modal-content -->
+</div><!-- /.modal -->
+	</tr>
+              </tbody>
+            </table>
+	</div>
+          <div class="table-responsive col-md-6">
+            <table class="table table-striped DivsContent" id="table3">
+              <thead>
+              </thead>
+              <tbody>
+		<tr> 
+			<td class="col-md-1"> Initials : </td> <td class="col-md-1"> <label id="init2"> PM </label></td>
+		</tr>
+                <tr>
+                  <td class="col-md-1">First Name :</td><td class="col-md-1"> <label id="firstn2">Paul</label></td>
+                 
+                </tr>
+                <tr>
+                  <td class="col-md-1">Last Name: </td>  <td class="col-md-1"><label id="lastn2">Mathew</label></td>
+                  
+                </tr>
+                 <tr>
+                  <td class="col-md-1">SC</td> <td class="col-md-1"><label id="scy2">YES</label></td>
+                 
+                </tr>
+ <tr>
+                  <td class="col-md-1">PC</td> <td class="col-md-1">l<label id="pcy2">NO</label></td>
+                 
+                </tr>
+<tr>
+		<td class="col-md-1"> <button type="button" class="btn btn-default" id="edit2">Edit Doctor Fields</button></td>
+		<td class="col-md-1"> <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal3" id="delete2">Delete Doctor</button></td>
+<tr><td class="col-md-1"> <button type="button" class="btn btn-default" id="save2">Save </button></td>
+		<td class="col-md-1"> <button type="button" class="btn btn-default" id="cancel2">Cancel All changes</button></td></tr>
+		<!-- Modal -->
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" 
+   aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="close" 
+               data-dismiss="modal" aria-hidden="true">
+                  &times;
+            </button>
+            <h4 class="modal-title" id="myModalLabel">
+               Are you Sure you want to delete this doctor?
+            </h4>
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-default" 
+               data-dismiss="modal">Cancel
+            </button>
+            <button type="button" class="btn btn-primary" id="deleteconfirm2" data-dismiss="modal">
+               Delete 
+            </button>
+         </div>
+      </div><!-- /.modal-content -->
+</div><!-- /.modal -->
+	</tr>
+              </tbody>
+            </table>
+</div>
+          <div class="table-responsive col-md-6">
+            <table class="table table-striped DivsContent" id="table4">
+              <thead>
+              </thead>
+              <tbody>
+		<tr> 
+			<td class="col-md-1"> Initials : </td> <td class="col-md-1"><label id="init3"> KA </label></td>
+		</tr>
+                <tr>
+                  <td class="col-md-1">First Name :</td><td class="col-md-1"><label id="firstn3">Kevin</label></td>
+                 
+                </tr>
+                <tr>
+                  <td class="col-md-1">Last Name: </td>  <td class="col-md-1"><label id="lastn3">Anderson</label></td>
+                  
+                </tr>
+                 <tr>
+                  <td class="col-md-1">SC</td> <td class="col-md-1"><label id="scy3">NO</label></td>
+                 
+                </tr>
+ <tr>
+                  <td class="col-md-1">PC</td> <td class="col-md-1"><label id="pcy3">YES</label></td>
+                 
+                </tr>
+<tr>
+		<td class="col-md-1"> <button type="button" class="btn btn-default" id="edit3">Edit Doctor Fields</button></td>
+		<td class="col-md-1"> <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal4" id="delete3">Delete Doctor</button></td>
+<tr><td class="col-md-1"> <button type="button" class="btn btn-default" id="save3">Save </button></td>
+		<td class="col-md-1"> <button type="button" class="btn btn-default" id="cancel3">Cancel All changes</button></td></tr>
+		<!-- Modal -->
+<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" 
+   aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="close" 
+               data-dismiss="modal" aria-hidden="true">
+                  &times;
+            </button>
+            <h4 class="modal-title" id="myModalLabel">
+               Are you Sure you want to delete this doctor?
+            </h4>
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-default" 
+               data-dismiss="modal">Cancel
+            </button>
+            <button type="button" class="btn btn-primary" id="deleteconfirm3" data-dismiss="modal">
+               Delete 
+            </button>
+         </div>
+      </div><!-- /.modal-content -->
+</div><!-- /.modal -->
+	</tr>
+              </tbody>
+            </table>
+</div>     
+     <div class="table-responsive col-md-6">
+            <table class="table table-striped DivsContent" id="table5">
+              <thead>
+              </thead>
+              <tbody>
+		<tr> 
+			<td class="col-md-1"> Initials : </td> <td class="col-md-1"><label id="init4"> PB </label></td>
+		</tr>
+                <tr>
+                  <td class="col-md-1">First Name :</td><td class="col-md-1"><label id="firstn4">Peter</label></td>
+                 
+                </tr>
+                <tr>
+                  <td class="col-md-1">Last Name: </td>  <td class="col-md-1"><label id="lastn4">Batterson</label></td>
+                  
+                </tr>
+                 <tr>
+                  <td class="col-md-1">SC</td> <td class="col-md-1"><label id="scy4">YES</label></td>
+                 
+                </tr>
+ <tr>
+                  <td class="col-md-1">PC</td> <td class="col-md-1"><label id="pcy4">YES</label></td>
+                 
+                </tr>
+<tr>
+		<td class="col-md-1"> <button type="button" class="btn btn-default"id="edit4">Edit Doctor Fields</button></td>
+		<td class="col-md-1"> <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal5" id="delete4">Delete Doctor</button></td>
+<tr><td class="col-md-1"> <button type="button" class="btn btn-default" id="save4">Save </button></td>
+		<td class="col-md-1"> <button type="button" class="btn btn-default" id="cancel4">Cancel All changes</button></td></tr>
+		<!-- Modal -->
+<div class="modal fade" id="myModal5" tabindex="-1" role="dialog" 
+   aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="close" 
+               data-dismiss="modal" aria-hidden="true">
+                  &times;
+            </button>
+            <h4 class="modal-title" id="myModalLabel">
+               Are you Sure you want to delete this doctor?
+            </h4>
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-default" 
+               data-dismiss="modal">Cancel
+            </button>
+            <button type="button" class="btn btn-primary" id="deleteconfirm4" data-dismiss="modal">
+               Delete 
+            </button>
+         </div>
+      </div><!-- /.modal-content -->
+</div><!-- /.modal -->
+	</tr>
+              </tbody>
+            </table>
+</div>     
+     <div class="table-responsive col-md-6">
+            <table class="table table-striped DivsContent" id="table6">
+              <thead>
+              </thead>
+              <tbody>
+		<tr> 
+			<td class="col-md-1"> Initials : </td> <td class="col-md-1"><label id="init5"> GS </label></td>
+		</tr>
+                <tr>
+                  <td class="col-md-1">First Name :</td><td class="col-md-1"><label id="firstn5">Geoffery</label></td>
+                 
+                </tr>
+                <tr>
+                  <td class="col-md-1">Last Name: </td>  <td class="col-md-1" ><label id="lastn5">Sanders</label></td>
+                  
+                </tr>
+                 <tr>
+                  <td class="col-md-1">SC</td> <td class="col-md-1"><label id="scy5">YES</label></td>
+                 
+                </tr>
+ <tr>
+                  <td class="col-md-1">PC</td> <td class="col-md-1"><label id="pcy5">YES</label></td>
+                 
+                </tr>
+<tr>
+		<td class="col-md-1"> <button type="button" class="btn btn-default" id="edit5">Edit Doctor Fields</button></td>
+		<td class="col-md-1"> <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal6" id="delete5">Delete Doctor</button></td>
+<tr><td class="col-md-1"> <button type="button" class="btn btn-default" id="save5">Save </button></td>
+		<td class="col-md-1"> <button type="button" class="btn btn-default" id="cancel5">Cancel All changes</button></td></tr>
+		<!-- Modal -->
+<div class="modal fade" id="myModal6" tabindex="-1" role="dialog" 
+   aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="close" 
+               data-dismiss="modal" aria-hidden="true">
+                  &times;
+            </button>
+            <h4 class="modal-title" id="myModalLabel">
+               Are you Sure you want to delete this doctor?
+            </h4>
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-default" 
+               data-dismiss="modal">Cancel
+            </button>
+            <button type="button" class="btn btn-primary" id="deleteconfirm5" data-dismiss="modal">
+               Delete 
+            </button>
+         </div>
+      </div><!-- /.modal-content -->
+</div><!-- /.modal -->
+	</tr>
+              </tbody>
+            </table>
+</div>
+          <div class="table-responsive col-md-6">
+            <table class="table table-striped DivsContent" id="table7">
+              <thead>
+              </thead>
+              <tbody>
+		<tr> 
+			<td class="col-md-1"> Initials : </td> <td class="col-md-1"><label id="init6"> RF </label></td>
+		</tr>
+                <tr>
+                  <td class="col-md-1">First Name :</td><td class="col-md-1"><label id="firstn6">Rebecca</label></td>
+                 
+                </tr>
+                <tr>
+                  <td class="col-md-1">Last Name: </td>  <td class="col-md-1"><label id="lastn6">Fiala</label></td>
+                  
+                </tr>
+                 <tr>
+                  <td class="col-md-1">SC</td> <td class="col-md-1"><label id="scy6">YES</label></td>
+                 
+                </tr>
+ <tr>
+                  <td class="col-md-1">PC</td> <td class="col-md-1"><label id="pcy6">YES</label></td>
+                 
+                </tr>
+<tr>
+		<td class="col-md-1"> <button type="button" class="btn btn-default" id="edit6">Edit Doctor Fields</button></td>
+		<td class="col-md-1"> <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal7" id="delete6">Delete Doctor</button></td>
+<tr><td class="col-md-1"> <button type="button" class="btn btn-default" id="save6">Save </button></td>
+		<td class="col-md-1"> <button type="button" class="btn btn-default" id="cancel6">Cancel All changes</button></td></tr>
+		<!-- Modal -->
+<div class="modal fade" id="myModal7" tabindex="-1" role="dialog" 
+   aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="close" 
+               data-dismiss="modal" aria-hidden="true">
+                  &times;
+            </button>
+            <h4 class="modal-title" id="myModalLabel">
+               Are you Sure you want to delete this doctor?
+            </h4>
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-default" 
+               data-dismiss="modal">Cancel
+            </button>
+            <button type="button" class="btn btn-primary" id="deleteconfirm6" data-dismiss="modal">
+               Delete 
+            </button>
+         </div>
+      </div><!-- /.modal-content -->
+</div><!-- /.modal -->
+	</tr>
+              </tbody>
+            </table>
+</div>
+          <div class="table-responsive col-md-6">
+            <table class="table table-striped DivsContent" id="table8">
+              <thead>
+              </thead>
+              <tbody>
+		<tr> 
+			<td class="col-md-1"> Initials : </td> <td class="col-md-1"><label id="init7"> JB </label></td>
+		</tr>
+                <tr>
+                  <td class="col-md-1">First Name :</td><td class="col-md-1"><label id="firstn7">John</label></td>
+                 
+                </tr>
+                <tr>
+                  <td class="col-md-1">Last Name: </td>  <td class="col-md-1"><label id="lastn7">Bell</label></td>
+                  
+                </tr>
+                 <tr>
+                  <td class="col-md-1">SC</td> <td class="col-md-1"><label id="scy7">NO</label></td>
+                 
+                </tr>
+ <tr>
+                  <td class="col-md-1">PC</td> <td class="col-md-1"><label id="pcy7"YES</label></td>
+                 
+                </tr>
+<tr>
+		<td class="col-md-1"> <button type="button" class="btn btn-default" id="edit7">Edit Doctor Fields</button></td>
+		<td class="col-md-1"> <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal8" id="delete7">Delete Doctor</button></td>
+<tr><td class="col-md-1"> <button type="button" class="btn btn-default" id="save7">Save </button></td>
+		<td class="col-md-1"> <button type="button" class="btn btn-default" id="cancel7">Cancel All changes</button></td></tr>
+		<!-- Modal -->
+<div class="modal fade" id="myModal8" tabindex="-1" role="dialog" 
+   aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="close" 
+               data-dismiss="modal" aria-hidden="true">
+                  &times;
+            </button>
+            <h4 class="modal-title" id="myModalLabel">
+               Are you Sure you want to delete this doctor?
+            </h4>
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-default" 
+               data-dismiss="modal">Cancel
+            </button>
+            <button type="button" class="btn btn-primary" id="deleteconfirm7" data-dismiss="modal">
+               Delete 
+            </button>
+         </div>
+      </div><!-- /.modal-content -->
+</div><!-- /.modal -->
+	</tr>
+              </tbody>
+            </table>
+</div>
+          <div class="table-responsive col-md-6">
+            <table class="table table-striped DivsContent" id="table9">
+              <thead>
+              </thead>
+              <tbody>
+		<tr> 
+			<td class="col-md-1"> Initials : </td> <td class="col-md-1"><label id="init8"> AK </label></td>
+		</tr>
+                <tr>
+                  <td class="col-md-1">First Name :</td><td class="col-md-1"><label id="firstn8">Amy</label></td>
+                 
+                </tr>
+                <tr>
+                  <td class="col-md-1">Last Name: </td>  <td class="col-md-1"><label id="lastn8">Kavanagh</label> </td>
+                  
+                </tr>
+                 <tr>
+                  <td class="col-md-1">SC</td> <td class="col-md-1"><label id="scy8">YES</label></td>
+                 
+                </tr>
+ <tr>
+                  <td class="col-md-1">PC</td> <td class="col-md-1"><label id="pcy8">YES</label></td>
+                 
+                </tr>
+<tr>
+		<td class="col-md-1"> <button type="button" class="btn btn-default" id="edit8">Edit Doctor Fields</button></td>
+		<td class="col-md-1"> <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal9" id="delete8">Delete Doctor</button></td>
+<tr><td class="col-md-1"> <button type="button" class="btn btn-default" id="save8">Save </button></td>
+		<td class="col-md-1"> <button type="button" class="btn btn-default" id="cancel8">Cancel All changes</button></td></tr>
+		<!-- Modal -->
+<div class="modal fade" id="myModal9" tabindex="-1" role="dialog" 
+   aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="close" 
+               data-dismiss="modal" aria-hidden="true">
+                  &times;
+            </button>
+            <h4 class="modal-title" id="myModalLabel">
+               Are you Sure you want to delete this doctor?
+            </h4>
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-default" 
+               data-dismiss="modal">Cancel
+            </button>
+            <button type="button" class="btn btn-primary" id="deleteconfirm8" data-dismiss="modal">
+               Delete 
+            </button>
+         </div>
+      </div><!-- /.modal-content -->
+</div><!-- /.modal -->
+	</tr>
+              </tbody>
+</div>
+            </table>
+	</div>
+          <div class="table-responsive col-md-6">
+            <table class="table table-striped DivsContent" id="table10">
+              <thead>
+              </thead>
+              <tbody>
+		<tr> 
+			<td class="col-md-1"> Initials : </td> <td class="col-md-1"><label id="init9"> MG</label> </td>
+		</tr>
+                <tr>
+                  <td class="col-md-1">First Name :</td><td class="col-md-1"><label id="firstn9">Maxwell</label></td>
+                 
+                </tr>
+                <tr>
+                  <td class="col-md-1">Last Name: </td>  <td class="col-md-1"><label id="lastn9">Garett</label></td>
+                  
+                </tr>
+                 <tr>
+                  <td class="col-md-1">SC</td> <td class="col-md-1"><label id="scy9">YES</label></td>
+                 
+                </tr>
+ <tr>
+                  <td class="col-md-1">PC</td> <td class="col-md-1"><label id="pcy9">YES</label></td>
+                 
+                </tr>
+<tr>
+		<td class="col-md-1"> <button type="button" class="btn btn-default" id="edit9">Edit Doctor Fields</button></td>
+		<td class="col-md-1"> <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal10" id="delete9">Delete Doctor</button></td>
+<tr><td class="col-md-1"> <button type="button" class="btn btn-default" id="save9">Save </button></td>
+		<td class="col-md-1"> <button type="button" class="btn btn-default" id="cancel9">Cancel All changes</button></td></tr>
+<!-- Modal -->
+<div class="modal fade" id="myModal10" tabindex="-1" role="dialog" 
+   aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="close" 
+               data-dismiss="modal" aria-hidden="true">
+                  &times;
+            </button>
+            <h4 class="modal-title" id="myModalLabel">
+               Are you Sure you want to delete this doctor?
+            </h4>
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-default" 
+               data-dismiss="modal">Cancel
+            </button>
+            <button type="button" class="btn btn-primary" id="deleteconfirm9" data-dismiss="modal">
+               Delete 
+            </button>
+         </div>
+      </div><!-- /.modal-content -->
+</div><!-- /.modal -->
+	</tr>
+              </tbody>
+            </table>
+</div>
+</div>
+
+<div id="lastdiv"> </div>
+
+<div class="bs-example">
+    <!-- Button HTML (to Trigger Modal) -->
+    <div class="span7 text-center"><a href="#myModal" class="btn btn-lg btn-primary" data-toggle="modal">Add New Doctors</a></div>
+    
+    <!-- Modal HTML -->
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Enter Details of New Doctor</h4>
+                </div>
+		&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <label>Initials: </label> <input type="text" class="input-xlarge" name="intials"/>
+		<br/>
+		<br/>
+		&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <label>First Name: </label> <input type="text" class="input-xlarge" name="firstname"/>
+		<br/>
+		<br/>
+		&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <label>Last Name: </label> <input type="text" class="input-xlarge" name="lastname"/>
+		<br/>
+		<br/>
+		&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <label>SC: </label> <input type="checkbox" name="SC"/> <label> YES </label> <input type="checkbox" name="SC"/> <label> NO </label>
+		<br/>
+		<br/>
+		&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <label>PC: </label> <input type="checkbox" name="PC"/> <label> YES </label> <input type="checkbox" name="PC"/> <label> NO </label>
+                <div class="modal-body">
+                    <p>Do you want to save changes you made to document before closing?</p>
+                    <p class="text-warning"><small>If you don't save, your changes will be lost.</small></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="newDoc">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>  
+   
+<nav class="navbar navbar-default navbar-bottom">
+  <div class="container-fluid">
+    <div>
+      <ul class="nav navbar-nav">
+        
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li> 
+       
+      </ul>
+    </div>
+  </div>
+</nav>
+</body>
+</html>
