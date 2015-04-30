@@ -1,0 +1,25 @@
+
+.table td {
+   text-align: center;   
+}
+.table th {
+   text-align: center;   
+}
+
+ table th {
+
+width: auto !important;
+}
+
+
+.span3 {  
+    height: 350px !important;
+    overflow: scroll;
+}?
+.ContentDivs
+        {
+                        display:none;
+        }
+    .bs-example{
+    	margin: 20px;
+    }
