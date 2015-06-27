@@ -1,1 +1,2 @@
-# CS-422-Doctor-Shift-Scheduler
+#UID Course Project
+##CS-422: Doctor-Shift-Scheduler
